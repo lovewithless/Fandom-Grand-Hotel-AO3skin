@@ -1,0 +1,3894 @@
+#main .wrapper,
+#dashboard .wrapper {
+  background: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+#main .listbox,
+#dashboard .listbox,
+#main fieldset.listbox,
+#dashboard fieldset.listbox {
+  background-image: none !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+}
+
+#main li.work.blurb,
+#main li.bookmark.blurb {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  overflow: visible !important;
+  background-image: url("https://64.media.tumblr.com/e3b0b45e43ddccee0fffd6dad6f78b65/33073648b2611c17-4b/s1280x1920/09e5bc3c93ea5613c5dcbb679236dc0e33977f0e.png"),
+    url("https://64.media.tumblr.com/7438e31eefb7aa96f26a7cf479c36212/33073648b2611c17-c3/s1280x1920/fdcc1f06747e664d0f11d4fd9f4048e08b3e3dd1.png"),
+    url("https://64.media.tumblr.com/36fb29faedb14446ac1aa172a7352077/33073648b2611c17-f6/s1280x1920/606d721424af910101928cab9c9ac238e825be27.png"),
+    url("https://64.media.tumblr.com/8829af73b414514641bd8488d5ff4020/33073648b2611c17-ef/s1280x1920/a8d956e8b518d5913e81402c33b46b7a180b4783.png") !important;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat !important;
+  background-position: left -13px top -13px,
+    right -13px top -13px,
+    left -13px bottom -13px,
+    right -13px bottom -13px !important;
+  background-size: 130px auto, 130px auto, 130px auto, 130px auto !important;
+  padding: 35px 25px 35px 25px !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+  border-radius: 0 !important;
+  margin-bottom: 20px !important;
+}
+
+#main li.work.blurb,
+#main li.bookmark.blurb {
+  background-size: 110px auto, 110px auto, 110px auto, 110px auto !important;
+  padding: 32px 18px 32px 18px !important;
+}
+
+li.work.blurb,
+li.bookmark.blurb {
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+}
+
+li.work.blurb > .header,
+li.bookmark.blurb > .header {
+  position: relative !important;
+  padding-left: 90px !important;
+  padding-right: 90px !important;
+}
+
+li.work.blurb > .header > *,
+li.bookmark.blurb > .header > * {
+  position: relative;
+  z-index: 2;
+}
+
+li.work.blurb > .header::before,
+li.work.blurb > .header::after,
+li.bookmark.blurb > .header::before,
+li.bookmark.blurb > .header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  background-repeat: no-repeat;
+  background-position: center 60%;
+  background-size: 80px auto;
+  opacity: 1;
+  z-index: 1;
+}
+
+li.work.blurb > .header::before,
+li.bookmark.blurb > .header::before {
+  left: -10px;
+  background-image: url("https://64.media.tumblr.com/ac88605c29de1ee39b5c8c508c6bfd58/f13229866d1445cc-42/s2048x3072/d00c7a4fd733e74a3d08d2afc24395fc85bf76d4.png");
+}
+
+li.work.blurb > .header::after,
+li.bookmark.blurb > .header::after {
+  right: -10px;
+  background-image: url("https://64.media.tumblr.com/692601cd5ed1c3fb7972b0d4c8c8455f/f13229866d1445cc-dc/s2048x3072/5533942c553adc7b83b8a06a6d39817dbc47da0d.png");
+}
+
+#main li.blurb ul.required-tags {
+  margin: 6px 0 8px 0 !important;
+  border-top: 0 !important;
+}
+
+#main li.blurb ul.required-tags li {
+  margin: 0 6px 6px 0 !important;
+}
+
+#main li.blurb ul.tags {
+  margin: 10px 0 0 0 !important;
+  text-align: left !important;
+}
+
+#main li.blurb ul.tags.commas li:after {
+  content: "" !important;
+  display: none !important;
+}
+
+#main li.blurb ul.tags a.tag {
+  text-decoration: none !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+
+#main li.blurb ul.tags a.tag:hover {
+  text-decoration: underline !important;
+}
+
+#main li.blurb ul.tags li {
+  display: block !important;
+  margin: 0 0 2px 0 !important;
+}
+
+#main li.blurb ul.tags li.fandom,
+#main li.blurb ul.tags li.fandoms {
+  text-align: left !important;
+  margin: 0 0 10px 0 !important;
+}
+
+#main li.blurb ul.tags li.warning,
+#main li.blurb ul.tags li.warnings,
+#main li.blurb ul.tags li.character,
+#main li.blurb ul.tags li.characters {
+  text-align: right !important;
+}
+
+#main li.blurb ul.tags li.relationship,
+#main li.blurb ul.tags li.relationships,
+#main li.blurb ul.tags li.freeform,
+#main li.blurb ul.tags li.freeforms {
+  text-align: left !important;
+}
+
+#main li.blurb ul.tags li.warning:first-child::before,
+#main li.blurb ul.tags li.warnings:first-child::before,
+#main li.blurb ul.tags li:not(.warning):not(.warnings) + li.warning::before,
+#main li.blurb ul.tags li:not(.warning):not(.warnings) + li.warnings::before,
+#main li.blurb ul.tags li.relationship:first-child::before,
+#main li.blurb ul.tags li.relationships:first-child::before,
+#main li.blurb ul.tags li:not(.relationship):not(.relationships) + li.relationship::before,
+#main li.blurb ul.tags li:not(.relationship):not(.relationships) + li.relationships::before,
+#main li.blurb ul.tags li.character:first-child::before,
+#main li.blurb ul.tags li.characters:first-child::before,
+#main li.blurb ul.tags li:not(.character):not(.characters) + li.character::before,
+#main li.blurb ul.tags li:not(.character):not(.characters) + li.characters::before,
+#main li.blurb ul.tags li.freeform:first-child::before,
+#main li.blurb ul.tags li.freeforms:first-child::before,
+#main li.blurb ul.tags li:not(.freeform):not(.freeforms) + li.freeform::before,
+#main li.blurb ul.tags li:not(.freeform):not(.freeforms) + li.freeforms::before {
+  display: block !important;
+  margin: 8px 0 4px 0 !important;
+  font-weight: 800 !important;
+  font-size: 1em !important;
+  letter-spacing: 0.06em !important;
+  content: " " !important;
+}
+
+#main li.blurb ul.tags li.warning:first-child::before,
+#main li.blurb ul.tags li.warnings:first-child::before,
+#main li.blurb ul.tags li:not(.warning):not(.warnings) + li.warning::before,
+#main li.blurb ul.tags li:not(.warning):not(.warnings) + li.warnings::before {
+  content: "Today’s Taboos" !important;
+  text-align: right !important;
+}
+
+#main li.blurb ul.tags li.relationship:first-child::before,
+#main li.blurb ul.tags li.relationships:first-child::before,
+#main li.blurb ul.tags li:not(.relationship):not(.relationships) + li.relationship::before,
+#main li.blurb ul.tags li:not(.relationship):not(.relationships) + li.relationships::before {
+  content: "Main Course Pairing" !important;
+  text-align: left !important;
+}
+
+#main li.blurb ul.tags li.character:first-child::before,
+#main li.blurb ul.tags li.characters:first-child::before,
+#main li.blurb ul.tags li:not(.character):not(.characters) + li.character::before,
+#main li.blurb ul.tags li:not(.character):not(.characters) + li.characters::before {
+  content: "Side Dishes" !important;
+  text-align: right !important;
+}
+
+#main li.blurb ul.tags li.freeform:first-child::before,
+#main li.blurb ul.tags li.freeforms:first-child::before,
+#main li.blurb ul.tags li:not(.freeform):not(.freeforms) + li.freeform::before,
+#main li.blurb ul.tags li:not(.freeform):not(.freeforms) + li.freeforms::before {
+  content: "Extra Toppings" !important;
+  text-align: left !important;
+}
+
+#main li.blurb ul.tags li.character,
+#main li.blurb ul.tags li.characters {
+  float: right !important;
+  width: auto !important;
+  margin: 0 0 6px 14px !important;
+  text-align: right !important;
+}
+
+#main li.blurb ul.tags li.character:first-child,
+#main li.blurb ul.tags li.characters:first-child,
+#main li.blurb ul.tags li:not(.character):not(.characters) + li.character,
+#main li.blurb ul.tags li:not(.character):not(.characters) + li.characters {
+  float: none !important;
+  clear: both !important;
+  display: block !important;
+  width: 100% !important;
+  margin: 0 0 6px 0 !important;
+  text-align: right !important;
+}
+
+#main li.blurb ul.tags li.freeform,
+#main li.blurb ul.tags li.freeforms {
+  float: left !important;
+  width: auto !important;
+  margin: 0 14px 6px 0 !important;
+}
+
+#main li.blurb ul.tags li.freeform:first-child,
+#main li.blurb ul.tags li.freeforms:first-child,
+#main li.blurb ul.tags li:not(.freeform):not(.freeforms) + li.freeform,
+#main li.blurb ul.tags li:not(.freeform):not(.freeforms) + li.freeforms {
+  float: none !important;
+  clear: both !important;
+  display: block !important;
+  width: 100% !important;
+  margin: 0 0 6px 0 !important;
+  text-align: left !important;
+}
+
+#main li.blurb ul.tags::after {
+  content: "" !important;
+  display: block !important;
+  clear: both !important;
+}
+
+#main li.blurb blockquote.userstuff.summary {
+  position: relative !important;
+}
+
+#main li.blurb blockquote.userstuff.summary::before {
+  content: "Chef’s Note" !important;
+  display: block !important;
+  margin: 8px 0 4px 0 !important;
+  font-weight: 800 !important;
+  font-size: 0.95em !important;
+  letter-spacing: 0.06em !important;
+  text-align: left !important;
+  line-height: 1.2 !important;
+}
+
+#main li.blurb dl.stats dd.kudos::before {
+  content: "Compliments " !important;
+}
+
+#main li.blurb dl.stats dd.hits::before {
+  content: "Tastings " !important;
+}
+
+#main li.blurb dl.stats dd.comments::before {
+  content: "Reviews " !important;
+}
+
+#main li.blurb dl.stats dd.bookmarks::before {
+  content: "To Try List " !important;
+}
+
+#main li.blurb dl.stats dd.words::before {
+  content: "Portion Size " !important;
+}
+
+#main li.blurb dl.stats dd.chapters::before {
+  content: "Dishes " !important;
+}
+
+#main li.blurb ul.tags,
+#main li.blurb ul.tags a.tag {
+  font-family: Optima, Candara, Corbel, "Trebuchet MS", "Segoe UI",
+    "PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",
+    "Noto Sans CJK SC","Noto Sans CJK JP",
+    system-ui,-apple-system,BlinkMacSystemFont,sans-serif !important;
+  font-weight: 400 !important;
+}
+
+#main li.blurb blockquote.userstuff.summary::before,
+#main li.blurb ul.tags li.warning::before,
+#main li.blurb ul.tags li.warnings::before,
+#main li.blurb ul.tags li.relationship::before,
+#main li.blurb ul.tags li.relationships::before,
+#main li.blurb ul.tags li.character::before,
+#main li.blurb ul.tags li.characters::before,
+#main li.blurb ul.tags li.freeform::before,
+#main li.blurb ul.tags li.freeforms::before {
+  font-family: "Garamond","Baskerville","Georgia","Times New Roman",serif !important;
+}
+
+#main .listbox,
+#dashboard .listbox,
+#main fieldset.listbox,
+#dashboard fieldset.listbox {
+  background-color: #FFE4E1 !important;
+  border-color: #E2BFC6 !important;
+}
+
+#main li.blurb ul.tags li.warning::before,
+#main li.blurb ul.tags li.warnings::before,
+#main li.blurb ul.tags li.relationship::before,
+#main li.blurb ul.tags li.relationships::before,
+#main li.blurb ul.tags li.character::before,
+#main li.blurb ul.tags li.characters::before,
+#main li.blurb ul.tags li.freeform::before,
+#main li.blurb ul.tags li.freeforms::before,
+#main li.blurb blockquote.userstuff.summary::before {
+  color: #5A2A7A !important;
+}
+
+#main .listbox,
+#dashboard .listbox,
+#main fieldset.listbox,
+#dashboard fieldset.listbox {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+#main .listbox *:not(input):not(textarea):not(select):not(button),
+#dashboard .listbox *:not(input):not(textarea):not(select):not(button) {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+html,
+body,
+#outer,
+#inner,
+#main,
+#dashboard,
+#header,
+#header .heading {
+  background-color: #FCEFEF !important;
+}
+
+#main,
+#dashboard {
+  color: #2A2423 !important;
+}
+
+#main h1,
+#main h2,
+#main h3,
+#main h4,
+#dashboard h1,
+#dashboard h2,
+#dashboard h3,
+#dashboard h4 {
+  color: #2A2423 !important;
+}
+
+#main a:link,
+#dashboard a:link {
+  color: #5A2A7A !important;
+}
+
+#main a:hover,
+#main a:active,
+#main a:focus,
+#dashboard a:hover,
+#dashboard a:active,
+#dashboard a:focus {
+  color: #B0184A !important;
+}
+
+#main .byline,
+#main .datetime,
+#main dl.stats dt,
+#main .meta,
+#dashboard .byline,
+#dashboard .datetime,
+#dashboard dl.stats dt,
+#dashboard .meta {
+  color: #5A2A7A !important;
+}
+
+#main .notes,
+#main .filters,
+#main .explanation,
+#dashboard .notes,
+#dashboard .filters,
+#dashboard .explanation {
+  color: #2A2423 !important;
+}
+
+li.work.blurb ul.tags li::before,
+li.bookmark.blurb ul.tags li::before,
+li.work.blurb blockquote.userstuff.summary::before,
+li.bookmark.blurb blockquote.userstuff.summary::before {
+  color: #5A2A7A !important;
+}
+
+#main .blurb ul.tags a,
+#dashboard .blurb ul.tags a {
+  color: #6B4AA5 !important;
+}
+
+#main .blurb ul.tags a:visited,
+#dashboard .blurb ul.tags a:visited {
+  color: #6FA3D8 !important;
+}
+
+#main .blurb h4.heading a:visited,
+#dashboard .blurb h4.heading a:visited {
+  color: #6B4AA5 !important;
+}
+
+#main .byline a:visited,
+#dashboard .byline a:visited {
+  color: #6B4AA5 !important;
+}
+
+li.work.blurb ul.required-tags li + li::before,
+li.bookmark.blurb ul.required-tags li + li::before {
+  color: #E7CFC8 !important;
+}
+
+#main .listbox,
+#dashboard .listbox,
+#main fieldset,
+#dashboard fieldset,
+#main fieldset fieldset.listbox,
+#dashboard fieldset fieldset.listbox {
+  border-color: rgba(52, 102, 214, 0.38) !important;
+}
+
+#main hr,
+#dashboard hr {
+  border-color: rgba(52, 102, 214, 0.28) !important;
+}
+
+#main .blurb ul.required-tags li,
+#dashboard .blurb ul.required-tags li,
+#main .blurb ul.required-tags li::after,
+#dashboard .blurb ul.required-tags li::after,
+#main .blurb ul.required-tags li span::after,
+#dashboard .blurb ul.required-tags li span::after {
+  color: #5A2A7A !important;
+}
+
+#main .blurb ul.required-tags li + li::before,
+#dashboard .blurb ul.required-tags li + li::before {
+  color: #F6D36B !important;
+  text-shadow: 0 1px 0 #A97817 !important;
+}
+
+li.work.blurb > .header::before,
+li.work.blurb > .header::after,
+li.bookmark.blurb > .header::before,
+li.bookmark.blurb > .header::after {
+  -webkit-filter: invert(20%) sepia(95%) saturate(4200%) hue-rotate(205deg) brightness(92%) contrast(105%) !important;
+  filter: invert(20%) sepia(95%) saturate(4200%) hue-rotate(205deg) brightness(92%) contrast(105%) !important;
+}
+
+html body #dashboard:not(.own) {
+  font-size: 0.82em !important;
+  --ac-navlist-justify: center !important;
+  --ac-navlist-max-width: 720px !important;
+}
+
+html body #dashboard:not(.own) ul.primary li a,
+html body #dashboard:not(.own) ul.secondary li a,
+html body #dashboard:not(.own) ul.navigation li a {
+  font-size: 1em !important;
+  line-height: 1.2 !important;
+  white-space: nowrap !important;
+}
+
+#dashboard:not(.own) ul.navigation,
+#dashboard:not(.own) ul.primary,
+#dashboard:not(.own) ul.secondary,
+#dashboard:not(.own) ul.actions {
+  margin: 0.2em auto 0.9em auto !important;
+  padding: 0 !important;
+  list-style: none !important;
+  width: 100% !important;
+  text-align: center !important;
+  justify-content: center !important;
+}
+
+#dashboard:not(.own) ul.navigation li,
+#dashboard:not(.own) ul.primary li,
+#dashboard:not(.own) ul.secondary li,
+#dashboard:not(.own) ul.actions li {
+  float: none !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin: 0 0.75em 0.55em 0.75em !important;
+}
+
+html body #dashboard:not(.own) {
+  font-size: 0.82em !important;
+}
+
+html body #dashboard:not(.own) ul.primary li a,
+html body #dashboard:not(.own) ul.secondary li a,
+html body #dashboard:not(.own) ul.navigation li a {
+  font-size: 1em !important;
+  line-height: 1.2 !important;
+  white-space: nowrap !important;
+}
+
+#dashboard:not(.own) ul.navigation,
+#dashboard:not(.own) ul.primary,
+#dashboard:not(.own) ul.secondary,
+#dashboard:not(.own) ul.actions {
+  margin: 0.2em auto 0.9em auto !important;
+  padding: 0 !important;
+  list-style: none !important;
+  width: 100% !important;
+  max-width: 720px !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+#dashboard:not(.own) ul.navigation li,
+#dashboard:not(.own) ul.primary li,
+#dashboard:not(.own) ul.secondary li,
+#dashboard:not(.own) ul.actions li {
+  float: none !important;
+  display: block !important;
+  margin: 0 0.75em 0.55em 0.75em !important;
+}
+
+#dashboard:not(.own) ul.navigation li a,
+#dashboard:not(.own) ul.navigation li span,
+#dashboard:not(.own) ul.primary li a,
+#dashboard:not(.own) ul.primary li span,
+#dashboard:not(.own) ul.secondary li a,
+#dashboard:not(.own) ul.secondary li span,
+#dashboard:not(.own) ul.actions li a,
+#dashboard:not(.own) ul.actions li span {
+  display: inline-block !important;
+  line-height: 1.75 !important;
+  padding: 0.25em 0.35em !important;
+  border: none !important;
+  background: transparent !important;
+  text-decoration: none !important;
+}
+
+#header #greeting {
+  text-align: right !important;
+}
+
+#header #greeting > ul {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+#header #greeting > ul > li {
+  float: none !important;
+  margin: 0 0 0 0.45em !important;
+  padding: 0 !important;
+}
+
+#header #greeting > ul > li:first-child {
+  margin-left: 0 !important;
+}
+
+#header #greeting > ul > li > a {
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+#header #greeting > ul > li > a:hover,
+#header #greeting > ul > li > a:focus,
+#header #greeting > ul > li > a:active {
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+#header #greeting .dropdown > a[href*="/users/"],
+#header #greeting .dropdown > a[href*="/works/new"],
+#header #greeting a[href*="/users/logout"] {
+  position: relative !important;
+  font-size: 0 !important;
+  color: transparent !important;
+  display: inline-block !important;
+  width: 26px !important;
+  height: 26px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+#header #greeting .dropdown > a[href*="/users/"]::before,
+#header #greeting .dropdown > a[href*="/works/new"]::before,
+#header #greeting a[href*="/users/logout"]::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: contain !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+#header #greeting .dropdown > a[href*="/users/"]::before {
+  background-image: url("https://64.media.tumblr.com/91d414d1e5cef27a38a71dd99e0cd2a1/6030458311e8441b-3a/s2048x3072/59d60ad5108c769d556ac2b27f83b975c405d398.png") !important;
+}
+
+#header #greeting .dropdown > a[href*="/works/new"]::before {
+  background-image: url("https://64.media.tumblr.com/f253ce4b739e0fc020590ea40f1a62a7/6030458311e8441b-e8/s2048x3072/fc7ebdc09dd18278b8cd2a4fe74a151c5624c4e0.png") !important;
+}
+
+#header #greeting a[href*="/users/logout"]::before {
+  background-image: url("https://64.media.tumblr.com/abae7f45b4e9c94224971d9e4973e293/6030458311e8441b-af/s2048x3072/1b689e1077df9139d3966b9d1f269dcb11756c2a.png") !important;
+}
+
+#main .blurb ul.required-tags li + li::before,
+#dashboard .blurb ul.required-tags li + li::before {
+  content: " ✦ " !important;
+}
+
+#header::after {
+  content: "" !important;
+  display: block !important;
+  width: 100% !important;
+  height: 25px !important;
+  margin: 10px 0 15px 0 !important;
+  background-image: url("https://64.media.tumblr.com/51527fe9f3a1cdd52b4ac4e2ca93c59a/6f7e2a80a4560185-81/s2048x3072/33068c605b72608102dcd0cb723876470f393b6f.png") !important;
+  background-repeat: repeat-x !important;
+  background-position: center center !important;
+  background-size: auto 100% !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+  opacity: 1 !important;
+}
+
+html body .work.blurb .header h4.heading:not(:has(a[rel="author"])) a[href*="/users/"]:not([rel="author"]):not(:first-of-type)::before,
+html body .bookmark.blurb .header h4.heading:not(:has(a[rel="author"])) a[href*="/users/"]:not([rel="author"]):not(:first-of-type)::before,
+html body .work.blurb .header h4.heading:not(:has(a[rel="author"])):not(:has(a[href*="/users/"]:not([rel="author"]):not(:first-of-type)))::after,
+html body .bookmark.blurb .header h4.heading:not(:has(a[rel="author"])):not(:has(a[href*="/users/"]:not([rel="author"]):not(:first-of-type)))::after {
+  color: #5A2A7A !important;
+}
+
+#kudos::before {
+  content: "" !important;
+  background-image: url("https://64.media.tumblr.com/07c3d820c6c407fbe1c74b9a96ccfcd8/966c28404e78841f-43/s2048x3072/e925c870318b766ad79fddc8198cf366e4379b77.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: top right !important;
+  background-size: contain !important;
+  width: 5em !important;
+  height: 5em !important;
+  top: .5em !important;
+  right: .8em !important;
+  -webkit-filter: brightness(0) saturate(100%) invert(29%) sepia(43%) saturate(1990%) hue-rotate(204deg) brightness(204%) contrast(69%) !important;
+  filter: brightness(0) saturate(100%) invert(29%) sepia(43%) saturate(1990%) hue-rotate(204deg) brightness(204%) contrast(69%) !important;
+  opacity: 1 !important;
+}
+
+#main .splash .module h3 {
+  color: #5A2A7A !important;
+  border-bottom: 1px solid #6FA3D8 !important;
+}
+
+#main .splash .favorite li a,
+#main .splash .browse li a {
+  color: #6B4AA5 !important;
+  background: transparent !important;
+}
+
+#main .splash .favorite li a:hover,
+#main .splash .browse li a:hover {
+  color: #5A2A7A !important;
+  background: transparent !important;
+}
+
+#main .splash .news li {
+  border-bottom: 1px solid #6FA3D8 !important;
+}
+
+#main .splash .news li:last-child {
+  border-bottom: none !important;
+}
+
+#main .splash .favorite li::after,
+#main .splash .browse li::after {
+  content: none !important;
+  display: none !important;
+  padding-right: 0 !important;
+}
+
+#main .splash .favorite,
+#main .splash .browse {
+  position: relative !important;
+  overflow: visible !important;
+  box-sizing: border-box !important;
+}
+
+#main .splash .favorite::after,
+#main .splash .browse::after {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  right: 45px !important;
+  top: 95% !important;
+  transform: translateY(-50%) !important;
+  width: 75px !important;
+  height: 75px !important;
+  background-image: url("https://64.media.tumblr.com/29779776d07974f61052ef15b0c87f32/5bd5800d7441e5ed-86/s2048x3072/753acdcf0d1eb450adf6d3a82b200e75c25b77b5.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+#header .primary .menu,
+#header .user .menu {
+  background-color: #FCEFEF !important;
+  border: 1px solid #6FA3D8 !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  position: absolute !important;
+  z-index: 10 !important;
+  box-shadow: 2px 2px 0px rgba(90, 42, 122, 0.15) !important;
+  background-image: none !important;
+}
+
+#header .primary .menu li,
+#header .user .menu li {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#header .primary .menu::after,
+#header .user .menu::after {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  width: 35px !important;
+  height: 35px !important;
+  background-image: url("https://64.media.tumblr.com/7c53cfb506f18ebdfe29622821eddfae/6d4dd20cec2ed4b9-1a/s2048x3072/cda2012a7c968986d019e56029796e574ea2d3b3.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: bottom right !important;
+  background-size: contain !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+  opacity: 1 !important;
+  z-index: -1 !important;
+}
+
+#dashboard.own {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+  overflow: visible !important;
+  background-image: url("https://64.media.tumblr.com/c85385e0e4b6305aaa83e848ffa640d9/3c1035b6be0f09f5-58/s1280x1920/8e84ad6144e0fd365f611d7296ab7922ff9048b5.png"),
+    url("https://64.media.tumblr.com/c5604d540af88740919f03e4121fc21a/3c1035b6be0f09f5-65/s1280x1920/ea6ebe313c8684d8214500fadc64e188eb12b03c.png"),
+    url("https://64.media.tumblr.com/1e9d1e5734b5a1732f55be1ffeb94d2b/3c1035b6be0f09f5-b4/s1280x1920/9981535976e580024b3c54594bdabeaaea36f477.png"),
+    url("https://64.media.tumblr.com/a12a6582d5a281c064800b04f39298b9/3c1035b6be0f09f5-40/s1280x1920/ef7c8c07b4f725f8acb7557d76a4c7b32528d7bd.png") !important;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat !important;
+  background-position: left 0 top 0,
+    right 0 top 0,
+    left 0 bottom 0,
+    right 0 bottom 0 !important;
+  background-size: 110px auto, 110px auto, 110px auto, 110px auto !important;
+  padding: 32px 18px 32px 18px !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+  border-radius: 0 !important;
+}
+
+#dashboard.own .wrapper,
+#dashboard.own .listbox {
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+#dashboard.own ul.navigation,
+#dashboard.own ul.primary {
+  margin: 0 0 0.15em 0 !important;
+}
+
+#dashboard.own ul.navigation li,
+#dashboard.own ul.primary li {
+  margin: 0 0.70em 0.06em !important;
+}
+
+#dashboard.own ul.navigation li a,
+#dashboard.own ul.navigation li span,
+#dashboard.own ul.primary li a,
+#dashboard.own ul.primary li span {
+  padding: 0.05em 0.32em !important;
+  line-height: 1.55 !important;
+}
+
+#dashboard:not(.own) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+  overflow: visible !important;
+  background-image: url("https://64.media.tumblr.com/c85385e0e4b6305aaa83e848ffa640d9/3c1035b6be0f09f5-58/s1280x1920/8e84ad6144e0fd365f611d7296ab7922ff9048b5.png"),
+    url("https://64.media.tumblr.com/c5604d540af88740919f03e4121fc21a/3c1035b6be0f09f5-65/s1280x1920/ea6ebe313c8684d8214500fadc64e188eb12b03c.png"),
+    url("https://64.media.tumblr.com/1e9d1e5734b5a1732f55be1ffeb94d2b/3c1035b6be0f09f5-b4/s1280x1920/9981535976e580024b3c54594bdabeaaea36f477.png"),
+    url("https://64.media.tumblr.com/a12a6582d5a281c064800b04f39298b9/3c1035b6be0f09f5-40/s1280x1920/ef7c8c07b4f725f8acb7557d76a4c7b32528d7bd.png") !important;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat !important;
+  background-position: left -2px top -14px,
+    right -2px top -14px,
+    left -2px bottom -12px,
+    right -2px bottom -12px !important;
+  background-size: 110px auto, 110px auto, 110px auto, 110px auto !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+#main .blurb h5.fandoms a:visited,
+#dashboard .blurb h5.fandoms a:visited {
+  color: #6FA3D8 !important;
+}
+
+#main .blurb h5.fandoms a,
+#dashboard .blurb h5.fandoms a {
+  color: #6B4AA5 !important;
+}
+
+#main h2.heading a {
+  color: #6B4AA5 !important;
+}
+
+#main h2.heading {
+  color: #5A2A7A !important;
+}
+
+html body #header #search .button {
+  color: #5A2A7A !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-weight: normal !important;
+}
+
+html body #header #search .button:hover {
+  color: #8A1F54 !important;
+  background: transparent !important;
+}
+
+html body #dashboard.own ul.navigation li a,
+html body #dashboard.own ul.navigation li span,
+html body #dashboard.own ul.primary li a,
+html body #dashboard.own ul.primary li span,
+html body #dashboard.own ul.secondary li a,
+html body #dashboard.own ul.secondary li span,
+html body #dashboard.own ul.actions li a {
+  color: #5A2A7A !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: none !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+
+html body #dashboard.own ul.navigation li a:hover,
+html body #dashboard.own ul.primary li a:hover,
+html body #dashboard.own ul.secondary li a:hover,
+html body #dashboard.own ul.actions li a:hover {
+  color: #8A1F54 !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: none !important;
+}
+
+html body #dashboard:not(.own) ul.navigation li a,
+html body #dashboard:not(.own) ul.primary li a,
+html body #dashboard:not(.own) ul.secondary li a,
+html body #dashboard:not(.own) ul.actions li a {
+  color: #5A2A7A !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+
+html body #dashboard:not(.own) ul.navigation li a:hover,
+html body #dashboard:not(.own) ul.primary li a:hover,
+html body #dashboard:not(.own) ul.secondary li a:hover,
+html body #dashboard:not(.own) ul.actions li a:hover {
+  color: #8A1F54 !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: none !important;
+}
+
+html body #header ul.primary li a,
+html body #main ul.navigation.actions li a,
+html body #main .actions a,
+html body #main .action,
+html body li.chapter-index a,
+html body li.download a,
+html body div.download a,
+html body button,
+html body input[type="submit"] {
+  color: #5A2A7A !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+html body #header ul.primary li a:hover,
+html body #main ul.navigation.actions li a:hover,
+html body #main .actions a:hover,
+html body #main .action:hover,
+html body li.chapter-index a:hover,
+html body li.download a:hover,
+html body div.download a:hover,
+html body button:hover,
+html body input[type="submit"]:hover {
+  color: #8A1F54 !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+
+html body .current,
+html body a.current,
+html body .selected,
+html body a.selected,
+html body #dashboard .current,
+html body #main ul.navigation.actions li.current a,
+html body #main ul.navigation.actions li span.current {
+  color: #8A1F54 !important;
+  font-weight: bold !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+
+html body #main ol.pagination li.current::before,
+html body #main ol.pagination li.current::after,
+html body #main ol.pagination li span.current::before,
+html body #main ol.pagination li span.current::after,
+html body #main ol.pagination li a.current::before,
+html body #main ol.pagination li a.current::after {
+  content: none !important;
+  display: none !important;
+}
+
+html body #main ol.pagination li a {
+  color: #5A2A7A !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+  padding: 2px 6px !important;
+  font-weight: normal !important;
+}
+
+html body #main ol.pagination li a:hover,
+html body #main ol.pagination li a:focus {
+  color: #8A1F54 !important;
+  background: transparent !important;
+}
+
+html body #main ol.pagination li.current,
+html body #main ol.pagination li span.current,
+html body #main ol.pagination li a.current {
+  color: #8A1F54 !important;
+  font-weight: bold !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+html body #main ol.pagination li.gap,
+html body #main ol.pagination li span.gap {
+  color: #5A2A7A !important;
+  background: transparent !important;
+}
+
+html body #main ol.pagination li.previous a,
+html body #main ol.pagination li.next a {
+  color: #5A2A7A !important;
+  font-weight: bold !important;
+}
+
+html body #main ol.pagination li.previous a:hover,
+html body #main ol.pagination li.next a:hover {
+  color: #8A1F54 !important;
+}
+
+html body #main ol.pagination li.previous span.disabled,
+html body #main ol.pagination li.next span.disabled {
+  color: rgba(90, 42, 122, 0.4) !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+html body #main .notice.notice,
+html body #main .comment_notice.comment_notice,
+html body #main .kudos_notice.kudos_notice,
+html body #main ul.notes.notes,
+html body #main .caution.caution,
+html body #main .error.error,
+html body #main .flash.flash.notice,
+html body #main .flash.flash.caution,
+html body #main .flash.flash.warning,
+html body #main .flash.flash.alert,
+html body #main .flash.flash.error,
+html body #main .flash.flash.success,
+html body #main .alert.flash.flash {
+  background: #FCEFEF !important;
+  border-color: #6FA3D8 !important;
+  color: #5A2A7A !important;
+  box-shadow: none !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+}
+
+html body #main .notice.notice a,
+html body #main .comment_notice.comment_notice a,
+html body #main .kudos_notice.kudos_notice a,
+html body #main ul.notes.notes a,
+html body #main .caution.caution a,
+html body #main .error.error a,
+html body #main .flash.flash.notice a,
+html body #main .flash.flash.caution a,
+html body #main .flash.flash.warning a,
+html body #main .flash.flash.alert a,
+html body #main .flash.flash.error a,
+html body #main .flash.flash.success a,
+html body #main .alert.flash.flash a {
+  color: #8A1F54 !important;
+}
+
+html body #main .notice.notice a:hover,
+html body #main .comment_notice.comment_notice a:hover,
+html body #main .kudos_notice.kudos_notice a:hover,
+html body #main ul.notes.notes a:hover,
+html body #main .caution.caution a:hover,
+html body #main .error.error a:hover,
+html body #main .flash.flash.notice a:hover,
+html body #main .flash.flash.caution a:hover,
+html body #main .flash.flash.warning a:hover,
+html body #main .flash.flash.alert a:hover,
+html body #main .flash.flash.error a:hover,
+html body #main .flash.flash.success a:hover,
+html body #main .alert.flash.flash a:hover {
+  color: #601538 !important;
+}
+
+html body #header #search .tip.tip,
+html body #header #search p.tip.tip,
+html body #main #search .tip.tip,
+html body #main #search p.tip.tip {
+  background: #FCEFEF !important;
+  border-color: #6FA3D8 !important;
+  color: #5A2A7A !important;
+}
+
+html body #kudos_message.notice,
+html body #kudos_message.kudos_error {
+  background: #FCEFEF !important;
+  border-color: #6FA3D8 !important;
+  color: #5A2A7A !important;
+}
+
+html body #kudos_message.notice a,
+html body #kudos_message.kudos_error a {
+  color: #8A1F54 !important;
+}
+
+html body #kudos_message.notice a:hover,
+html body #kudos_message.kudos_error a:hover {
+  color: #601538 !important;
+}
+
+html body #kudos_message.notice::before {
+  content: none !important;
+  display: none !important;
+}
+
+html body #kudos_message.notice > * {
+  position: static !important;
+  left: auto !important;
+}
+
+html body div.autocomplete {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+html body div.autocomplete ul {
+  background: #FCEFEF !important;
+  border: 1px solid #6FA3D8 !important;
+  color: #5A2A7A !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: block !important;
+  width: 100% !important;
+  box-shadow: 2px 2px 5px rgba(90, 42, 122, 0.1) !important;
+}
+
+html body div.autocomplete li {
+  background: transparent !important;
+  color: #5A2A7A !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(111, 159, 216, 0.2) !important;
+  padding: 6px 8px !important;
+  margin: 0 !important;
+  list-style: none !important;
+  text-align: left !important;
+}
+
+html body div.autocomplete li:last-child {
+  border-bottom: none !important;
+}
+
+html body div.autocomplete li.selected,
+html body div.autocomplete li:hover {
+  background: #6FA3D8 !important;
+  color: #FCEFEF !important;
+  cursor: pointer !important;
+}
+
+html body div.autocomplete li.notice {
+  color: #5A2A7A !important;
+  font-style: normal !important;
+  background: transparent !important;
+}
+
+html body #main form#work_search,
+html body #main form#people_search,
+html body #main form#tag_search,
+html body #main form#bookmark_search,
+html body #main form[action*="/works/search"],
+html body #main form[action*="/people/search"],
+html body #main form[action*="/users/search"],
+html body #main form[action*="/tags/search"],
+html body #main form[action*="/bookmarks/search"] {
+  --ac-color-border: #6FA3D8 !important;
+  --ac-color-surface: #FFFDF6 !important;
+  --ac-color-white: #FFFDF6 !important;
+  --ac-color-3b4b5f: #5A2A7A !important;
+  --ac-color-24364c: #5A2A7A !important;
+  --ac-color-f2f6ff: #FCEFEF !important;
+  --ac-rgba-accent-08: rgba(111, 163, 216, 0.08) !important;
+  --ac-rgba-accent-15: rgba(111, 163, 216, 0.15) !important;
+}
+
+html body #main form#work_search fieldset,
+html body #main form#people_search fieldset,
+html body #main form#tag_search fieldset,
+html body #main form#bookmark_search fieldset,
+html body #main form[action*="/works/search"] fieldset,
+html body #main form[action*="/people/search"] fieldset,
+html body #main form[action*="/users/search"] fieldset,
+html body #main form[action*="/tags/search"] fieldset,
+html body #main form[action*="/bookmarks/search"] fieldset {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: 0 0 0 1px #6FA3D8 inset,
+              0 2px 8px var(--ac-rgba-black-05) !important;
+}
+
+html body #main form#work_search fieldset legend,
+html body #main form#people_search fieldset legend,
+html body #main form#tag_search fieldset legend,
+html body #main form#bookmark_search fieldset legend,
+html body #main form[action*="/works/search"] fieldset legend,
+html body #main form[action*="/people/search"] fieldset legend,
+html body #main form[action*="/users/search"] fieldset legend,
+html body #main form[action*="/tags/search"] fieldset legend,
+html body #main form[action*="/bookmarks/search"] fieldset legend {
+  background: #FCEFEF !important;
+  border-color: #6FA3D8 !important;
+  color: #5A2A7A !important;
+}
+
+html body #main form#work_search input,
+html body #main form#work_search select,
+html body #main form#work_search textarea,
+html body #main form#people_search input,
+html body #main form#people_search select,
+html body #main form#people_search textarea,
+html body #main form#tag_search input,
+html body #main form#tag_search select,
+html body #main form#tag_search textarea,
+html body #main form#bookmark_search input,
+html body #main form#bookmark_search select,
+html body #main form#bookmark_search textarea,
+html body #main form[action*="/works/search"] input,
+html body #main form[action*="/works/search"] select,
+html body #main form[action*="/works/search"] textarea,
+html body #main form[action*="/people/search"] input,
+html body #main form[action*="/people/search"] select,
+html body #main form[action*="/people/search"] textarea,
+html body #main form[action*="/users/search"] input,
+html body #main form[action*="/users/search"] select,
+html body #main form[action*="/users/search"] textarea,
+html body #main form[action*="/tags/search"] input,
+html body #main form[action*="/tags/search"] select,
+html body #main form[action*="/tags/search"] textarea,
+html body #main form[action*="/bookmarks/search"] input,
+html body #main form[action*="/bookmarks/search"] select,
+html body #main form[action*="/bookmarks/search"] textarea {
+  border-color: #6FA3D8 !important;
+  color: #5A2A7A !important;
+  background-color: #FFFDF6 !important;
+}
+
+html body #main form#work_search input::placeholder,
+html body #main form#people_search input::placeholder,
+html body #main form#tag_search input::placeholder,
+html body #main form#bookmark_search input::placeholder,
+html body #main form[action*="/works/search"] input::placeholder,
+html body #main form[action*="/people/search"] input::placeholder,
+html body #main form[action*="/users/search"] input::placeholder,
+html body #main form[action*="/tags/search"] input::placeholder,
+html body #main form[action*="/bookmarks/search"] input::placeholder {
+  color: rgba(90, 42, 122, 0.5) !important;
+}
+
+html body #main form#work_search input[type="submit"],
+html body #main form#people_search input[type="submit"],
+html body #main form#tag_search input[type="submit"],
+html body #main form#bookmark_search input[type="submit"],
+html body #main form[action*="/works/search"] input[type="submit"],
+html body #main form[action*="/people/search"] input[type="submit"],
+html body #main form[action*="/users/search"] input[type="submit"],
+html body #main form[action*="/tags/search"] input[type="submit"],
+html body #main form[action*="/bookmarks/search"] input[type="submit"],
+html body #main form#work_search button,
+html body #main form#people_search button,
+html body #main form#tag_search button,
+html body #main form#bookmark_search button,
+html body #main form[action*="/works/search"] button,
+html body #main form[action*="/people/search"] button,
+html body #main form[action*="/users/search"] button,
+html body #main form[action*="/tags/search"] button,
+html body #main form[action*="/bookmarks/search"] button {
+  border-color: #6FA3D8 !important;
+  color: #5A2A7A !important;
+  background-color: #FCEFEF !important;
+}
+
+html body #main form#work_search input[type="submit"]:hover,
+html body #main form#people_search input[type="submit"]:hover,
+html body #main form#tag_search input[type="submit"]:hover,
+html body #main form#bookmark_search input[type="submit"]:hover,
+html body #main form[action*="/works/search"] input[type="submit"]:hover,
+html body #main form[action*="/people/search"] input[type="submit"]:hover,
+html body #main form[action*="/users/search"] input[type="submit"]:hover,
+html body #main form[action*="/tags/search"] input[type="submit"]:hover,
+html body #main form[action*="/bookmarks/search"] input[type="submit"]:hover,
+html body #main form#work_search button:hover,
+html body #main form#people_search button:hover,
+html body #main form#tag_search button:hover,
+html body #main form#bookmark_search button:hover,
+html body #main form[action*="/works/search"] button:hover,
+html body #main form[action*="/people/search"] button:hover,
+html body #main form[action*="/users/search"] button:hover,
+html body #main form[action*="/tags/search"] button:hover,
+html body #main form[action*="/bookmarks/search"] button:hover {
+  border-color: #8A1F54 !important;
+  color: #8A1F54 !important;
+}
+
+html body #main form#work_search input[type="checkbox"],
+html body #main form#work_search input[type="radio"],
+html body #main form#people_search input[type="checkbox"],
+html body #main form#people_search input[type="radio"],
+html body #main form#tag_search input[type="checkbox"],
+html body #main form#tag_search input[type="radio"],
+html body #main form#bookmark_search input[type="checkbox"],
+html body #main form#bookmark_search input[type="radio"],
+html body #main form[action*="/works/search"] input[type="checkbox"],
+html body #main form[action*="/works/search"] input[type="radio"],
+html body #main form[action*="/people/search"] input[type="checkbox"],
+html body #main form[action*="/people/search"] input[type="radio"],
+html body #main form[action*="/users/search"] input[type="checkbox"],
+html body #main form[action*="/users/search"] input[type="radio"],
+html body #main form[action*="/tags/search"] input[type="checkbox"],
+html body #main form[action*="/tags/search"] input[type="radio"],
+html body #main form[action*="/bookmarks/search"] input[type="checkbox"],
+html body #main form[action*="/bookmarks/search"] input[type="radio"] {
+  accent-color: #8A1F54 !important;
+}
+
+html body #main .symbol.question {
+  border-color: #6FA3D8 !important;
+  background-color: #FCEFEF !important;
+  color: #5A2A7A !important;
+}
+
+html body #main .symbol.question::before,
+html body #main .symbol.question::after {
+  color: #5A2A7A !important;
+}
+
+html body #main form#work_search,
+html body #main form#people_search,
+html body #main form#tag_search,
+html body #main form#bookmark_search,
+html body #main form[action*="/works/search"],
+html body #main form[action*="/people/search"],
+html body #main form[action*="/users/search"],
+html body #main form[action*="/tags/search"],
+html body #main form[action*="/bookmarks/search"] {
+  color: #5A2A7A !important;
+}
+
+html body #main #work-filters,
+html body #main form#work-filters,
+html body #main .filters,
+html body #main #filters {
+  color: #5A2A7A !important;
+}
+
+html body #main #work-filters h1,
+html body #main #work-filters h2,
+html body #main #work-filters h3,
+html body #main #work-filters h4,
+html body #main #work-filters legend,
+html body #main #work-filters label,
+html body #main #work-filters dt,
+html body #main #work-filters dd,
+html body #main #work-filters p,
+html body #main #work-filters span {
+  color: #5A2A7A !important;
+}
+
+html body #main #work-filters a,
+html body #main .filters a {
+  color: #5A2A7A !important;
+}
+
+html body #main #work-filters a:hover,
+html body #main .filters a:hover {
+  color: #8A1F54 !important;
+}
+
+html body #main #work-filters,
+html body #main form#work-filters,
+html body #main .filters,
+html body #main #filters {
+  --ac-color-border: #6FA3D8 !important;
+  --ac-color-surface: #FFFDF6 !important;
+  --ac-color-white: #FFFDF6 !important;
+  --ac-color-3b4b5f: #5A2A7A !important;
+  --ac-color-24364c: #5A2A7A !important;
+  --ac-color-f2f6ff: #FCEFEF !important;
+  --ac-rgba-accent-08: rgba(111, 163, 216, 0.08) !important;
+  --ac-rgba-accent-15: rgba(111, 163, 216, 0.15) !important;
+}
+
+html body #main #work-filters input,
+html body #main #work-filters select,
+html body #main #work-filters textarea,
+html body #main form#work-filters input,
+html body #main form#work-filters select,
+html body #main form#work-filters textarea,
+html body #main .filters input,
+html body #main .filters select,
+html body #main .filters textarea {
+  border-color: #6FA3D8 !important;
+  background-color: #FFFDF6 !important;
+  color: #5A2A7A !important;
+}
+
+html body #main #work-filters input[type="submit"],
+html body #main #work-filters button,
+html body #main form#work-filters input[type="submit"],
+html body #main form#work-filters button,
+html body #main .filters input[type="submit"],
+html body #main .filters button {
+  border-color: #6FA3D8 !important;
+  background-color: #FCEFEF !important;
+  color: #5A2A7A !important;
+}
+
+html body #header .dropdown,
+html body #header .dropdown *,
+html body #header .dropdown-menu,
+html body #header .dropdown-menu *,
+html body #header ul.dropdown-menu,
+html body #header ul.dropdown-menu * {
+  color: #5A2A7A !important;
+}
+
+html body #main h2,
+html body #main h3,
+html body #main h4,
+html body #main .heading {
+  color: #5A2A7A !important;
+  font-family: inherit !important;
+}
+
+html body #main h3 *,
+html body #main h4 *,
+html body #main .heading *,
+html body #main .heading span {
+  color: #5A2A7A !important;
+}
+
+html body #main div.search p {
+  color: #5A2A7A !important;
+}
+
+html body #main .heading a:hover,
+html body #main h3 a:hover,
+html body #main h4 a:hover {
+  color: #601538 !important;
+}
+
+html body #main form.verbose {
+  background: #FCEFEF !important;
+  border: none !important;
+  color: #5A2A7A !important;
+  padding: 15px !important;
+  box-shadow: none !important;
+}
+
+html body #main form.verbose fieldset,
+html body #main fieldset.verbose {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+html body #main p.required.notice {
+  background: #FCEFEF !important;
+  border-color: #6FA3D8 !important;
+  color: #B0184A !important;
+  box-shadow: none !important;
+}
+
+html body #main form.verbose input,
+html body #main form.verbose textarea,
+html body #main form.verbose select {
+  border: 1px solid #6FA3D8 !important;
+  background: #FFFFFF !important;
+  color: #2A2423 !important;
+  box-shadow: none !important;
+}
+
+html body #main form.verbose a.action {
+  background: #FCEFEF !important;
+  border: 1px solid #6FA3D8 !important;
+  color: #5A2A7A !important;
+  box-shadow: none !important;
+}
+
+html body #main form.verbose dl,
+html body #main form.verbose dl.meta,
+html body #main form.verbose .meta,
+html body #main form.verbose .group,
+html body #main form.verbose .box,
+html body #main form.verbose .module {
+  background: #FCEFEF !important;
+  border-color: #6FA3D8 !important;
+}
+
+html body #main form.verbose dl dt,
+html body #main form.verbose dl dd,
+html body #main form.verbose .meta dt,
+html body #main form.verbose .meta dd {
+  border-color: rgba(52, 102, 214, 0.28) !important;
+  background: transparent !important;
+}
+
+html body #main form.verbose fieldset.media,
+html body #main form.verbose fieldset#media,
+html body #main form.verbose fieldset#skin_media,
+html body #main form.verbose .media.box,
+html body #main form.verbose .media.group,
+html body #main form.verbose .media.module,
+html body #main form.verbose .media.meta,
+html body #main form.verbose dl.media {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+html body #main form.verbose fieldset.media ul,
+html body #main form.verbose fieldset#media ul,
+html body #main form.verbose fieldset#skin_media ul,
+html body #main form.verbose .media ul {
+  background: #FCEFEF !important;
+  border: 1px solid #6FA3D8 !important;
+  border-radius: 14px !important;
+  box-shadow: none !important;
+}
+
+html body #main form.verbose .parents .box,
+html body #main form.verbose .parents .group,
+html body #main form.verbose .parent .box,
+html body #main form.verbose .parent .group,
+html body #main form.verbose #parents .box,
+html body #main form.verbose #parents .group,
+html body #main form.verbose #parent .box,
+html body #main form.verbose #parent .group {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+html body #main form.verbose .parents li,
+html body #main form.verbose #parents li,
+html body #main form.verbose .parent li,
+html body #main form.verbose #parent li {
+  background: #FCEFEF !important;
+  border: 1px solid #6FA3D8 !important;
+  color: #5A2A7A !important;
+  border-radius: 999px !important;
+}
+
+html body #main form.verbose,
+html body #main form.verbose label,
+html body #main form.verbose dt,
+html body #main form.verbose dd,
+html body #main form.verbose p,
+html body #main form.verbose li,
+html body #main form.verbose span,
+html body #main form.verbose legend,
+html body #main form.verbose h1,
+html body #main form.verbose h2,
+html body #main form.verbose h3,
+html body #main form.verbose h4 {
+  color: #5A2A7A !important;
+}
+
+html body #main form#new_skin,
+html body #main form#edit_skin,
+html body #main form[action*="/skins"] {
+  --ac-color-border: #6FA3D8;
+  --ac-color-surface: #FCEFEF;
+  --ac-color-white: #FCEFEF;
+  --ac-color-3b4b5f: #5A2A7A;
+  --ac-color-24364c: #2A2423;
+  --ac-color-f2f6ff: #FCEFEF;
+  --ac-rgba-accent-08: rgba(52, 102, 214, 0.08);
+  --ac-rgba-accent-15: rgba(52, 102, 214, 0.15);
+}
+
+html body #main form#new_skin .heading,
+html body #main form#edit_skin .heading,
+html body #main form[action*="/skins"] .heading,
+html body #main form#new_skin fieldset > legend,
+html body #main form#edit_skin fieldset > legend,
+html body #main form[action*="/skins"] fieldset > legend,
+html body #main form#new_skin .landmark,
+html body #main form#edit_skin .landmark,
+html body #main form[action*="/skins"] .landmark {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 0 0 8px 0 !important;
+  color: #5A2A7A !important;
+}
+
+html body #main form#new_skin .advanced,
+html body #main form#edit_skin .advanced,
+html body #main form[action*="/skins"] .advanced,
+html body #main form#new_skin .conditions,
+html body #main form#edit_skin .conditions,
+html body #main form[action*="/skins"] .conditions,
+html body #main form#new_skin .parents,
+html body #main form#edit_skin .parents,
+html body #main form[action*="/skins"] .parents {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+html body #main form#new_skin input,
+html body #main form#new_skin textarea,
+html body #main form#new_skin select,
+html body #main form#edit_skin input,
+html body #main form#edit_skin textarea,
+html body #main form#edit_skin select,
+html body #main form[action*="/skins"] input,
+html body #main form[action*="/skins"] textarea,
+html body #main form[action*="/skins"] select {
+  background: #FFFFFF !important;
+  border: 1px solid rgba(52, 102, 214, 0.55) !important;
+  color: #2A2423 !important;
+  box-shadow: none !important;
+}
+
+html body #main form#new_skin input:focus,
+html body #main form#new_skin textarea:focus,
+html body #main form#new_skin select:focus,
+html body #main form#edit_skin input:focus,
+html body #main form#edit_skin textarea:focus,
+html body #main form#edit_skin select:focus,
+html body #main form[action*="/skins"] input:focus,
+html body #main form[action*="/skins"] textarea:focus,
+html body #main form[action*="/skins"] select:focus {
+  outline: none !important;
+  border-color: #3466D6 !important;
+  box-shadow: 0 0 0 2px rgba(52, 102, 214, 0.18) !important;
+}
+
+html body #main form#new_skin a.delete,
+html body #main form#new_skin a.remove,
+html body #main form#edit_skin a.delete,
+html body #main form#edit_skin a.remove,
+html body #main form[action*="/skins"] a.delete,
+html body #main form[action*="/skins"] a.remove {
+  background: #FCEFEF !important;
+  border: 1px solid #6FA3D8 !important;
+  color: #5A2A7A !important;
+  box-shadow: none !important;
+}
+
+html body #main form#new_skin hr,
+html body #main form#edit_skin hr,
+html body #main form[action*="/skins"] hr,
+html body #main form#new_skin .meta dt,
+html body #main form#new_skin .meta dd,
+html body #main form#edit_skin .meta dt,
+html body #main form#edit_skin .meta dd,
+html body #main form[action*="/skins"] .meta dt,
+html body #main form[action*="/skins"] .meta dd {
+  border-color: rgba(52, 102, 214, 0.28) !important;
+}
+
+html body #main form#new_skin input[type="checkbox"],
+html body #main form#new_skin input[type="radio"],
+html body #main form#edit_skin input[type="checkbox"],
+html body #main form#edit_skin input[type="radio"],
+html body #main form[action*="/skins"] input[type="checkbox"],
+html body #main form[action*="/skins"] input[type="radio"] {
+  accent-color: #8A1F54 !important;
+}
+
+html body #main .symbol.question {
+  border: none !important;
+  background: transparent !important;
+  color: #5A2A7A !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+html body #main .symbol.question::before,
+html body #main .symbol.question::after {
+  color: #5A2A7A !important;
+}
+
+html body #main a .symbol.question,
+html body #main button .symbol.question,
+html body #main summary .symbol.question {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+html body #main a:focus .symbol.question,
+html body #main a:focus-visible .symbol.question,
+html body #main button:focus .symbol.question,
+html body #main button:focus-visible .symbol.question,
+html body #main summary:focus .symbol.question,
+html body #main summary:focus-visible .symbol.question {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+html body #main .symbol.question::before,
+html body #main .symbol.question::after {
+  box-shadow: none !important;
+}
+
+html body #main form#new_skin a,
+html body #main form#edit_skin a,
+html body #main form[action*="/skins"] a {
+  color: #5A2A7A !important;
+}
+
+html body #main form#new_skin a:hover,
+html body #main form#edit_skin a:hover,
+html body #main form[action*="/skins"] a:hover {
+  color: #B0184A !important;
+}
+
+html body #main form.verbose input[type="file"] {
+  border: 1px solid #6FA3D8 !important;
+  background: #FFFFFF !important;
+  color: #2A2423 !important;
+  border-radius: 12px !important;
+  padding: 10px !important;
+  box-shadow: none !important;
+}
+
+html body #main form.verbose input[type="file"]::-webkit-file-upload-button {
+  background: #FCEFEF !important;
+  border: 1px solid #6FA3D8 !important;
+  color: #5A2A7A !important;
+  border-radius: 999px !important;
+  padding: 8px 12px !important;
+  box-shadow: none !important;
+}
+
+html body #main form.verbose input[type="file"]::file-selector-button {
+  background: #FCEFEF !important;
+  border: 1px solid #6FA3D8 !important;
+  color: #5A2A7A !important;
+  border-radius: 999px !important;
+  padding: 8px 12px !important;
+  box-shadow: none !important;
+}
+
+html body #main form.verbose input[type="file"]::file-selector-button:hover,
+html body #main form.verbose input[type="file"]::-webkit-file-upload-button:hover {
+  background: #FFE4E1 !important;
+}
+
+html body #main form.verbose input[type="file"]::file-selector-button:active,
+html body #main form.verbose input[type="file"]::-webkit-file-upload-button:active {
+  background: #FAD4D7 !important;
+}
+
+html body #main form.verbose input[type="file"],
+html body #main form#new_skin input[type="file"],
+html body #main form#edit_skin input[type="file"],
+html body #main form[action*="/skins"] input[type="file"] {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main form.verbose input[type="submit"],
+html body #main form.verbose input[type="button"],
+html body #main form.verbose button,
+html body #main form#new_skin input[type="submit"],
+html body #main form#new_skin input[type="button"],
+html body #main form#new_skin button,
+html body #main form#edit_skin input[type="submit"],
+html body #main form#edit_skin input[type="button"],
+html body #main form#edit_skin button,
+html body #main form[action*="/skins"] input[type="submit"],
+html body #main form[action*="/skins"] input[type="button"],
+html body #main form[action*="/skins"] button {
+  background: #FCEFEF !important;
+  border: 1px solid #6FA3D8 !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+  box-shadow: none !important;
+  border-radius: 999px !important;
+}
+
+html body #main form.verbose input[type="submit"]:hover,
+html body #main form.verbose input[type="button"]:hover,
+html body #main form.verbose button:hover,
+html body #main form#new_skin input[type="submit"]:hover,
+html body #main form#edit_skin input[type="submit"]:hover,
+html body #main form[action*="/skins"] input[type="submit"]:hover {
+  background: #FFE4E1 !important;
+}
+
+html body #main form.verbose input[type="submit"]:active,
+html body #main form.verbose input[type="button"]:active,
+html body #main form.verbose button:active,
+html body #main form#new_skin input[type="submit"]:active,
+html body #main form#edit_skin input[type="submit"]:active,
+html body #main form[action*="/skins"] input[type="submit"]:active {
+  background: #FAD4D7 !important;
+}
+
+html body #main form#new_skin .parents a,
+html body #main form#edit_skin .parents a,
+html body #main form[action*="/skins"] .parents a,
+html body #main form#new_skin a.add,
+html body #main form#edit_skin a.add,
+html body #main form[action*="/skins"] a.add,
+html body #main form#new_skin a.button,
+html body #main form#edit_skin a.button,
+html body #main form[action*="/skins"] a.button,
+html body #main form#new_skin a.action,
+html body #main form#edit_skin a.action,
+html body #main form[action*="/skins"] a.action,
+html body #main form#new_skin a:link,
+html body #main form#edit_skin a:link,
+html body #main form[action*="/skins"] a:link,
+html body #main form#new_skin a:visited,
+html body #main form#edit_skin a:visited,
+html body #main form[action*="/skins"] a:visited {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main form#new_skin .parents a,
+html body #main form#edit_skin .parents a,
+html body #main form[action*="/skins"] .parents a {
+  background: #FCEFEF !important;
+  border: 1px solid #6FA3D8 !important;
+  box-shadow: none !important;
+  border-radius: 999px !important;
+}
+
+html body #main form#new_skin .parents a *,
+html body #main form#edit_skin .parents a *,
+html body #main form[action*="/skins"] .parents a * {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main form[action*="/preferences"] fieldset,
+html body #main form[action*="/preferences"] .module,
+html body #main form[action*="/preferences"] .box,
+html body #main form[action*="/preferences"] .group {
+  background: #FCEFEF !important;
+  border: 1px solid #6FA3D8 !important;
+  box-shadow: none !important;
+  border-radius: 16px !important;
+}
+
+html body #main form[action*="/preferences"] hr,
+html body #main form[action*="/preferences"] .meta dt,
+html body #main form[action*="/preferences"] .meta dd,
+html body #main form[action*="/preferences"] dl dt,
+html body #main form[action*="/preferences"] dl dd {
+  border-color: rgba(111, 163, 216, 0.45) !important;
+}
+
+html body #main form[action*="/preferences"],
+html body #main form[action*="/preferences"] label,
+html body #main form[action*="/preferences"] p,
+html body #main form[action*="/preferences"] li,
+html body #main form[action*="/preferences"] dt,
+html body #main form[action*="/preferences"] dd,
+html body #main form[action*="/preferences"] h3,
+html body #main form[action*="/preferences"] h4 {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main form[action*="/preferences"] input[type="checkbox"],
+html body #main form[action*="/preferences"] input[type="radio"] {
+  accent-color: #5A2A7A !important;
+}
+
+html body #main form[action*="/preferences"] fieldset,
+html body #main form[action*="/preferences"] .module,
+html body #main form[action*="/preferences"] .box,
+html body #main form[action*="/preferences"] .group {
+  background: #FCEFEF !important;
+  border: none !important;
+  box-shadow: 0 0 0 1px #6FA3D8 inset !important;
+  border-radius: 16px !important;
+}
+
+html body #main form[action*="/users/"] fieldset,
+html body #main form[action*="/users/"] .module,
+html body #main form[action*="/users/"] .box,
+html body #main form[action*="/users/"] .group {
+  background: #FCEFEF !important;
+  border: none !important;
+  box-shadow: 0 0 0 1px #6FA3D8 inset !important;
+  border-radius: 16px !important;
+}
+
+html body #main form[action*="/preferences"] fieldset dl,
+html body #main form[action*="/preferences"] fieldset fieldset,
+html body #main form[action*="/preferences"] fieldset .wrapper,
+html body #main form[action*="/preferences"] fieldset .module,
+html body #main form[action*="/preferences"] fieldset .box,
+html body #main form[action*="/preferences"] fieldset .group {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+html body #main form[action*="/users/"] fieldset dl,
+html body #main form[action*="/users/"] fieldset fieldset,
+html body #main form[action*="/users/"] fieldset .wrapper,
+html body #main form[action*="/users/"] fieldset .module,
+html body #main form[action*="/users/"] fieldset .box,
+html body #main form[action*="/users/"] fieldset .group {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+html body #main form[action*="/preferences"] fieldset dl dt,
+html body #main form[action*="/preferences"] fieldset dl dd,
+html body #main form[action*="/users/"] fieldset dl dt,
+html body #main form[action*="/users/"] fieldset dl dd {
+  border-color: rgba(111, 163, 216, 0.45) !important;
+}
+
+html body #main form[action*="/preferences"] select,
+html body #main form[action*="/users/"] select {
+  border: 1px solid #6FA3D8 !important;
+  box-shadow: none !important;
+  background-color: #FCEFEF !important;
+}
+
+html body #main form[action*="/preferences"] dl dd select,
+html body #main form[action*="/users/"] dl dd select {
+  border-color: #6FA3D8 !important;
+}
+
+html body #main form[action*="/preferences"] select:focus,
+html body #main form[action*="/users/"] select:focus {
+  outline: none !important;
+  border-color: #6FA3D8 !important;
+  box-shadow: 0 0 0 2px rgba(111, 163, 216, 0.20) !important;
+}
+
+html body #main form[id^="edit_preference"] #preference_work_title_format {
+  background: #FFFDF6 !important;
+  border: 1px solid #6FA3D8 !important;
+  color: #5A2A7A !important;
+  box-shadow: none !important;
+}
+
+html body #main form[id^="edit_preference"] #preference_work_title_format:focus {
+  outline: none !important;
+  border-color: #8A1F54 !important;
+  box-shadow: 0 0 0 2px rgba(111, 163, 216, 0.18) !important;
+}
+
+html body #main dl.statistics.meta.group,
+html body #main #statistics dl.statistics.meta.group,
+html body #main .statistics dl.statistics.meta.group {
+  background: #FCEFEF !important;
+  background-color: #FCEFEF !important;
+  background-image: none !important;
+  border: 1px solid #6FA3D8 !important;
+  border-radius: 18px !important;
+  box-shadow: none !important;
+  padding: 18px 16px !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main dl.statistics.meta.group dt,
+html body #main dl.statistics.meta.group dd,
+html body #main #statistics dl.statistics.meta.group dt,
+html body #main #statistics dl.statistics.meta.group dd,
+html body #main .statistics dl.statistics.meta.group dt,
+html body #main .statistics dl.statistics.meta.group dd {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: rgba(111, 163, 216, 0.35) !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main li.fandom.listbox.group,
+html body #dashboard li.fandom.listbox.group {
+  background: #FCEFEF !important;
+  background-color: #FCEFEF !important;
+  background-image: none !important;
+  border: none !important;
+  box-shadow: 0 0 0 1px rgba(111,163,216,0.45) inset !important;
+  border-radius: 18px !important;
+  padding: 18px 16px !important;
+  margin: 0 0 18px 0 !important;
+}
+
+html body #main li.fandom.listbox.group > ul.index.group,
+html body #dashboard li.fandom.listbox.group > ul.index.group {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html body #main #statistics li > dl,
+html body #main .statistics li > dl,
+html body #main.statistics li > dl {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+html body #main #statistics li > dl,
+html body #main #statistics li > dl a,
+html body #main #statistics li > dl dt,
+html body #main #statistics li > dl dd,
+html body #main .statistics li > dl,
+html body #main .statistics li > dl a,
+html body #main .statistics li > dl dt,
+html body #main .statistics li > dl dd,
+html body #main.statistics li > dl,
+html body #main.statistics li > dl a,
+html body #main.statistics li > dl dt,
+html body #main.statistics li > dl dd {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main #statistics dl.stats,
+html body #main .statistics dl.stats,
+html body #main.statistics dl.stats {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+html body #main #statistics dl.stats dt,
+html body #main #statistics dl.stats dd,
+html body #main .statistics dl.stats dt,
+html body #main .statistics dl.stats dd,
+html body #main.statistics dl.stats dt,
+html body #main.statistics dl.stats dd {
+  border-color: rgba(111, 163, 216, 0.30) !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main li.collection.blurb.group,
+html body #main li.collection.picture.blurb.group {
+  background: #FCEFEF !important;
+  border: none !important;
+  box-shadow: 0 0 0 1px rgba(111,163,216,.55) inset !important;
+  border-radius: 18px !important;
+  padding: 18px 16px !important;
+  margin: 0 0 18px 0 !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main li.collection.blurb.group > .header.module.group,
+html body #main li.collection.picture.blurb.group > .header.module.group,
+html body #main li.collection.blurb.group .header.module.group,
+html body #main li.collection.picture.blurb.group .header.module.group {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 0 12px 0 !important;
+}
+
+html body #main li.collection.blurb.group blockquote.userstuff.summary,
+html body #main li.collection.picture.blurb.group blockquote.userstuff.summary {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 6px 0 0 0 !important;
+}
+
+html body #main li.collection.blurb.group dl.stats,
+html body #main li.collection.picture.blurb.group dl.stats {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 10px 0 0 0 !important;
+}
+
+html body #main li.collection.blurb.group ul.actions,
+html body #main li.collection.picture.blurb.group ul.actions,
+html body #main li.collection.blurb.group ul.actions li,
+html body #main li.collection.picture.blurb.group ul.actions li {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html body #main li.collection.blurb.group,
+html body #main li.collection.picture.blurb.group,
+html body #main li.collection.blurb.group a,
+html body #main li.collection.picture.blurb.group a,
+html body #main li.collection.blurb.group dt,
+html body #main li.collection.blurb.group dd,
+html body #main li.collection.picture.blurb.group dt,
+html body #main li.collection.picture.blurb.group dd,
+html body #main li.collection.blurb.group span,
+html body #main li.collection.picture.blurb.group span {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main li.collection.blurb.group .module,
+html body #main li.collection.picture.blurb.group .module,
+html body #main li.collection.blurb.group .box,
+html body #main li.collection.picture.blurb.group .box,
+html body #main li.collection.blurb.group .group,
+html body #main li.collection.picture.blurb.group .group {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html body #header,
+html body header#header,
+html body #header.region,
+html body header#header.region,
+html body #header.region.collection,
+html body header#header.region.collection {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html body header#header.region.collection nav[aria-label="Site"],
+html body #header.region.collection nav[aria-label="Site"] {
+  background: #FCEFEF !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html body #header.region.collection nav[aria-label="Site"] a {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #header.region.collection nav[aria-label="Site"] a:hover,
+html body #header.region.collection nav[aria-label="Site"] a:focus {
+  color: #8A1F54 !important;
+  -webkit-text-fill-color: #8A1F54 !important;
+  text-decoration: none !important;
+}
+
+html body #header.region.collection h2.collections,
+html body #header.region.collection h2.collection,
+html body #header.region.collection h2 {
+  background: #FCEFEF !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html body #header.region.collection h2.collections a,
+html body #header.region.collection h2.collection a,
+html body #header.region.collection h2 a {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #header hr,
+html body #header.region.collection hr {
+  display: none !important;
+}
+
+html body #header .header.module,
+html body #header .header.module.group,
+html body #header .clear,
+html body #header.region.collection .header.module,
+html body #header.region.collection .header.module.group,
+html body #header.region.collection .clear {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html body #main ul.participant.pseud.index.group > li.user.pseud.picture.blurb.group,
+html body #main li.user.pseud.blurb {
+  background: #FCEFEF !important;
+  background-color: #FCEFEF !important;
+  border: 1px solid #6FA3D8 !important;
+  border-radius: 18px !important;
+  box-shadow: none !important;
+}
+
+html body #main ul.participant.pseud.index.group > li.user.pseud.picture.blurb.group .header.module,
+html body #main li.user.pseud.blurb .header.module {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html body #main li.user.pseud.blurb,
+html body #main li.user.pseud.blurb a,
+html body #main ul.participant.pseud.index.group > li.user.pseud.picture.blurb.group,
+html body #main ul.participant.pseud.index.group > li.user.pseud.picture.blurb.group a {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main li.user.pseud.blurb a:hover,
+html body #main ul.participant.pseud.index.group > li.user.pseud.picture.blurb.group a:hover {
+  color: #8A1F54 !important;
+  -webkit-text-fill-color: #8A1F54 !important;
+  text-decoration: none !important;
+}
+
+html body #main li.user.pseud.blurb .icon img.icon,
+html body #main ul.participant.pseud.index.group > li.user.pseud.picture.blurb.group .icon img.icon {
+  border-radius: 14px !important;
+  border: 1px solid rgba(111, 163, 216, 0.45) !important;
+}
+
+html body #main p[title="Choose media type"] select#media_id,
+html body #dashboard p[title="Choose media type"] select#media_id {
+  background: #FCEFEF !important;
+  background-color: #FCEFEF !important;
+  border: 1px solid #6FA3D8 !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+  box-shadow: none !important;
+  border-radius: 12px !important;
+}
+
+html body #main p[title="Choose media type"] select#media_id:focus,
+html body #dashboard p[title="Choose media type"] select#media_id:focus {
+  outline: none !important;
+  border-color: #6FA3D8 !important;
+  box-shadow: 0 0 0 2px rgba(111,163,216,.20) !important;
+}
+
+html body #main p[title="Choose media type"] input[type="submit"],
+html body #dashboard p[title="Choose media type"] input[type="submit"] {
+  background: #FCEFEF !important;
+  border: 1px solid #6FA3D8 !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+  box-shadow: none !important;
+  border-radius: 999px !important;
+  padding: 6px 12px !important;
+}
+
+html body #main p[title="Choose media type"] input[type="submit"]:hover,
+html body #dashboard p[title="Choose media type"] input[type="submit"]:hover {
+  background: #FFE4E1 !important;
+}
+
+html body #main p[title="Choose media type"] input[type="submit"]:active,
+html body #dashboard p[title="Choose media type"] input[type="submit"]:active {
+  background: #FAD4D7 !important;
+}
+
+html body #main p[title="Choose media type"] select#media_id option,
+html body #dashboard p[title="Choose media type"] select#media_id option {
+  background: #FCEFEF !important;
+  color: #5A2A7A !important;
+}
+
+html body #main dl.meta.group,
+html body #main .collection dl.meta.group,
+html body #main .collections dl.meta.group {
+  background: #FCEFEF !important;
+  border: 1px solid rgba(111,163,216,.60) !important;
+  border-radius: 18px !important;
+  box-shadow: none !important;
+  padding: 16px 14px !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main dl.meta.group dt,
+html body #main dl.meta.group dd,
+html body #main .collection dl.meta.group dt,
+html body #main .collection dl.meta.group dd,
+html body #main .collections dl.meta.group dt,
+html body #main .collections dl.meta.group dd {
+  background: transparent !important;
+  border-color: rgba(111,163,216,.35) !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main dl.meta.group ul,
+html body #main dl.meta.group li,
+html body #main .collection dl.meta.group ul,
+html body #main .collection dl.meta.group li,
+html body #main .collections dl.meta.group ul,
+html body #main .collections dl.meta.group li {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+html body #main dl.meta.group a,
+html body #main dl.meta.group a.tag,
+html body #main .collection dl.meta.group a,
+html body #main .collection dl.meta.group a.tag,
+html body #main .collections dl.meta.group a,
+html body #main .collections dl.meta.group a.tag {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+  text-decoration: none !important;
+}
+
+html body #main dl.meta.group a:hover,
+html body #main dl.meta.group a:focus,
+html body #main .collection dl.meta.group a:hover,
+html body #main .collection dl.meta.group a:focus,
+html body #main .collections dl.meta.group a:hover,
+html body #main .collections dl.meta.group a:focus {
+  color: #8A1F54 !important;
+  -webkit-text-fill-color: #8A1F54 !important;
+  text-decoration: underline !important;
+}
+
+html body #dashboard ul.navigation li.expandable,
+html body #main ul.navigation li.expandable {
+  position: relative !important;
+}
+
+html body #dashboard ul.expandable.secondary,
+html body #main ul.expandable.secondary,
+html body #dashboard ul.navigation ul.expandable.secondary,
+html body #main ul.navigation ul.expandable.secondary {
+  position: absolute !important;
+  top: 100% !important;
+  margin-top: 10px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 9999 !important;
+  background: #FCEFEF !important;
+  background-color: #FCEFEF !important;
+  border: 1px solid rgba(111,163,216,.45) !important;
+  border-radius: 16px !important;
+  box-shadow: none !important;
+  padding: 10px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  min-width: 170px !important;
+  width: max-content !important;
+  max-width: 80vw !important;
+}
+
+html body #dashboard ul.expandable.secondary.hidden,
+html body #main ul.expandable.secondary.hidden,
+html body #dashboard ul.navigation ul.expandable.secondary.hidden,
+html body #main ul.navigation ul.expandable.secondary.hidden {
+  display: none !important;
+}
+
+html body #dashboard ul.expandable.secondary li,
+html body #main ul.expandable.secondary li,
+html body #dashboard ul.navigation ul.expandable.secondary li,
+html body #main ul.navigation ul.expandable.secondary li {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html body #dashboard ul.expandable.secondary li a,
+html body #main ul.expandable.secondary li a,
+html body #dashboard ul.navigation ul.expandable.secondary li a,
+html body #main ul.navigation ul.expandable.secondary li a {
+  display: block !important;
+  padding: 7px 10px !important;
+  border-radius: 10px !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+}
+
+html body #dashboard ul.expandable.secondary li a:hover,
+html body #main ul.expandable.secondary li a:hover,
+html body #dashboard ul.navigation ul.expandable.secondary li a:hover,
+html body #main ul.navigation ul.expandable.secondary li a:hover {
+  background: rgba(111,163,216,.12) !important;
+  color: #8A1F54 !important;
+  -webkit-text-fill-color: #8A1F54 !important;
+}
+
+html body #dashboard ul.expandable.secondary li span.current,
+html body #main ul.expandable.secondary li span.current,
+html body #dashboard ul.navigation ul.expandable.secondary li span.current,
+html body #main ul.navigation ul.expandable.secondary li span.current {
+  display: block !important;
+  padding: 7px 10px !important;
+  border-radius: 10px !important;
+  background: rgba(111,163,216,.08) !important;
+  color: #8A1F54 !important;
+  -webkit-text-fill-color: #8A1F54 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html body #main ul.menu {
+  background: #FCEFEF !important;
+  border: none !important;
+  box-shadow: 0 0 0 1px rgba(111,163,216,.45) inset !important;
+  border-radius: 18px !important;
+  padding: 12px 14px !important;
+  margin: 12px 0 !important;
+  list-style: none !important;
+}
+
+html body #main ul.menu > li {
+  margin: 0 !important;
+  padding: 8px 6px !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html body #main ul.menu > li > a {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+  text-decoration: none !important;
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  display: inline !important;
+}
+
+html body #main ul.menu > li:hover {
+  background: rgba(90,42,122,.06) !important;
+}
+
+html body #main form#new_work fieldset > legend,
+html body #main form[id^="edit_work"] fieldset > legend,
+html body #main form[action*="/works"] fieldset > legend,
+html body #main form[action*="/import"] fieldset > legend,
+html body #main form[action*="/imports"] fieldset > legend {
+  background: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 0 0 10px 0 !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+}
+
+html body #main form#new_work fieldset > legend *,
+html body #main form[id^="edit_work"] fieldset > legend *,
+html body #main form[action*="/works"] fieldset > legend *,
+html body #main form[action*="/import"] fieldset > legend *,
+html body #main form[action*="/imports"] fieldset > legend * {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  color: inherit !important;
+  -webkit-text-fill-color: inherit !important;
+  text-decoration: none !important;
+}
+
+html body #main form#new_work fieldset > legend::before,
+html body #main form#new_work fieldset > legend::after,
+html body #main form[id^="edit_work"] fieldset > legend::before,
+html body #main form[id^="edit_work"] fieldset > legend::after,
+html body #main form[action*="/works"] fieldset > legend::before,
+html body #main form[action*="/works"] fieldset > legend::after,
+html body #main form[action*="/import"] fieldset > legend::before,
+html body #main form[action*="/import"] fieldset > legend::after,
+html body #main form[action*="/imports"] fieldset > legend::before,
+html body #main form[action*="/imports"] fieldset > legend::after {
+  content: none !important;
+  display: none !important;
+}
+
+html body #main li.comment.group,
+html body #main li.unread.comment.group,
+html body #dashboard li.comment.group,
+html body #dashboard li.unread.comment.group {
+  background: #FCEFEF !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 18px !important;
+  padding: 16px 16px !important;
+  margin: 0 0 16px 0 !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main li.comment.group *,
+html body #dashboard li.comment.group * {
+  border-color: transparent !important;
+}
+
+html body #main li.comment.group h4.heading.byline,
+html body #dashboard li.comment.group h4.heading.byline {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main li.comment.group a,
+html body #dashboard li.comment.group a {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+  text-decoration: none !important;
+}
+
+html body #main li.comment.group a:hover,
+html body #dashboard li.comment.group a:hover {
+  color: #8A1F54 !important;
+  -webkit-text-fill-color: #8A1F54 !important;
+}
+
+html body #main li.comment.group .posted.datetime,
+html body #dashboard li.comment.group .posted.datetime {
+  color: rgba(90,42,122,.75) !important;
+  -webkit-text-fill-color: rgba(90,42,122,.75) !important;
+}
+
+html body #main li.comment.group .icon,
+html body #main li.comment.group img.icon,
+html body #dashboard li.comment.group .icon,
+html body #dashboard li.comment.group img.icon {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html body #main li.comment.group blockquote.userstuff,
+html body #dashboard li.comment.group blockquote.userstuff {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  margin: 10px 0 12px 0 !important;
+  padding: 0 !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main li.comment.group ul.actions,
+html body #dashboard li.comment.group ul.actions {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+html body #main li.comment.group ul.actions input[type="submit"],
+html body #dashboard li.comment.group ul.actions input[type="submit"] {
+  background: rgba(255,255,255,.35) !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 10px !important;
+  padding: 6px 10px !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main li.comment.group ul.actions input[type="submit"]:hover,
+html body #dashboard li.comment.group ul.actions input[type="submit"]:hover {
+  background: rgba(255,255,255,.55) !important;
+}
+
+html body #main li.skins.own.picture.blurb.group,
+html body #dashboard li.skins.own.picture.blurb.group {
+  background: #FCEFEF !important;
+  border: 1px solid rgba(111,163,216,.45) !important;
+  box-shadow: none !important;
+  border-radius: 18px !important;
+  padding: 14px 16px !important;
+  margin: 0 0 16px 0 !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main li.skins.own.picture.blurb.group .header.module,
+html body #dashboard li.skins.own.picture.blurb.group .header.module {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 0 10px 0 !important;
+}
+
+html body #main li.skins.own.picture.blurb.group h4.heading,
+html body #dashboard li.skins.own.picture.blurb.group h4.heading {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main li.skins.own.picture.blurb.group h4.heading a,
+html body #dashboard li.skins.own.picture.blurb.group h4.heading a {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+  text-decoration: none !important;
+}
+
+html body #main li.skins.own.picture.blurb.group h4.heading a:hover,
+html body #dashboard li.skins.own.picture.blurb.group h4.heading a:hover {
+  color: #8A1F54 !important;
+  -webkit-text-fill-color: #8A1F54 !important;
+  text-decoration: underline !important;
+}
+
+html body #main li.skins.own.picture.blurb.group .datetime,
+html body #dashboard li.skins.own.picture.blurb.group .datetime {
+  color: rgba(90,42,122,.70) !important;
+  -webkit-text-fill-color: rgba(90,42,122,.70) !important;
+}
+
+html body #main li.skins.own.picture.blurb.group h6.landmark.heading,
+html body #dashboard li.skins.own.picture.blurb.group h6.landmark.heading {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: rgba(90,42,122,.85) !important;
+  -webkit-text-fill-color: rgba(90,42,122,.85) !important;
+  margin: 10px 0 6px 0 !important;
+  padding: 0 !important;
+}
+
+html body #main li.skins.own.picture.blurb.group blockquote.userstuff.summary,
+html body #dashboard li.skins.own.picture.blurb.group blockquote.userstuff.summary {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 0 0 12px 0 !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main li.skins.own.picture.blurb.group ul.actions,
+html body #dashboard li.skins.own.picture.blurb.group ul.actions {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+html body #main li.skins.own.picture.blurb.group ul.actions a,
+html body #dashboard li.skins.own.picture.blurb.group ul.actions a {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+  text-decoration: none !important;
+}
+
+html body #main li.skins.own.picture.blurb.group ul.actions a:hover,
+html body #dashboard li.skins.own.picture.blurb.group ul.actions a:hover {
+  color: #8A1F54 !important;
+  -webkit-text-fill-color: #8A1F54 !important;
+  text-decoration: underline !important;
+}
+
+html body #main li.skins.own.picture.blurb.group ul.actions input[type="submit"],
+html body #dashboard li.skins.own.picture.blurb.group ul.actions input[type="submit"] {
+  background: rgba(111,163,216,.14) !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 10px !important;
+  padding: 6px 10px !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main li.skins.own.picture.blurb.group ul.actions input[type="submit"]:hover,
+html body #dashboard li.skins.own.picture.blurb.group ul.actions input[type="submit"]:hover {
+  background: rgba(111,163,216,.22) !important;
+  color: #8A1F54 !important;
+  -webkit-text-fill-color: #8A1F54 !important;
+}
+
+html body #main #work-filters,
+html body #main #filters,
+html body #main .filters,
+html body #main dl.meta.group,
+html body #main #tag {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+html body #main ol.pagination {
+  margin-bottom: 10px !important;
+}
+
+body #main li.chapter .secondary,
+body #main li.download .secondary,
+body #main .work.navigation li.chapter .secondary,
+body #main .work.navigation li.download .secondary {
+  background: #FCEFEF !important;
+  border: 1px solid rgba(111,163,216,.45) !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 16px !important;
+}
+
+body #main li.download .secondary,
+body #main .work.navigation li.download .secondary {
+  min-width: 0 !important;
+  width: 9.6em !important;
+  padding: 8px 8px !important;
+}
+
+body #main li.download .secondary ul.menu {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body #main li.download .secondary ul.menu > li {
+  width: 50% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body #main li.download .secondary ul.menu > li > a {
+  display: block !important;
+  text-align: center !important;
+  padding: 8px 6px !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+body #main li.download .secondary ul.menu > li > a:hover {
+  background: rgba(111,163,216,.12) !important;
+}
+
+body #main li.chapter .secondary,
+body #main .work.navigation li.chapter .secondary {
+  min-width: 0 !important;
+  width: 10.6em !important;
+  padding: 10px 10px !important;
+}
+
+body #main li.chapter .secondary select {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+  background: #FFFDF6 !important;
+  border: 1px solid rgba(111,163,216,.55) !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  outline: none !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+body #main li.chapter .secondary input[type="submit"],
+body #main .work.navigation li.chapter .secondary input[type="submit"] {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 0 !important;
+  padding: 6px 8px !important;
+  margin: 8px auto 0 auto !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+body #main li.chapter .secondary input[type="submit"]:hover {
+  color: #8A1F54 !important;
+  background: rgba(111,163,216,.10) !important;
+  border-radius: 10px !important;
+}
+
+html body #workskin .preface,
+html body #workskin .preface.group,
+html body #main .preface,
+html body #main .preface.group {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+html body #main dl.work.meta.group,
+html body #main dl.meta.group,
+html body #workskin dl.work.meta.group,
+html body #workskin dl.meta.group {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+dl.work.meta > dt.rating::before {
+  content: "Spice Level" !important;
+}
+
+dl.work.meta > dt.warning::before {
+  content: "Today’s Taboos" !important;
+}
+
+dl.work.meta > dt.category::before {
+  content: "Combo Set" !important;
+}
+
+dl.work.meta > dt.fandom::before {
+  content: "House Special" !important;
+}
+
+dl.work.meta > dt.relationship::before {
+  content: "Main Course Pairing" !important;
+}
+
+dl.work.meta > dt.character::before {
+  content: "Side Dishes" !important;
+}
+
+dl.work.meta > dt.freeform::before {
+  content: "Extra Toppings" !important;
+}
+
+dl.work.meta > dt.language::before {
+  content: "Cuisine" !important;
+}
+
+dl.work.meta > dt.series::before {
+  content: "Series Menu" !important;
+}
+
+dl.work.meta > dt.stats::before {
+  content: "Kitchen Report" !important;
+}
+
+.wrapper dl.work.meta dd.stats dl.stats dd.kudos::before {
+  content: "Compliments " !important;
+}
+
+.wrapper dl.work.meta dd.stats dl.stats dd.hits::before {
+  content: "Tastings " !important;
+}
+
+.wrapper dl.work.meta dd.stats dl.stats dd.comments::before {
+  content: "Reviews " !important;
+}
+
+.wrapper dl.work.meta dd.stats dl.stats dd.bookmarks::before {
+  content: "To Try List " !important;
+}
+
+.wrapper dl.work.meta dd.stats dl.stats dd.words::before {
+  content: "Portion Size " !important;
+}
+
+.wrapper dl.work.meta dd.stats dl.stats dd.chapters::before {
+  content: "Dishes " !important;
+}
+
+#main .splash .news blockquote p:first-child {
+  background: none !important;
+  padding-left: 0 !important;
+  min-height: 0 !important;
+}
+
+#main .splash .news blockquote p:first-child::before {
+  content: "" !important;
+  display: block !important;
+  float: left !important;
+  width: 25px !important;
+  height: 110px !important;
+  margin: 0.2em 0.6em 0.2em 0 !important;
+  background-image: url("https://64.media.tumblr.com/d6f4c14c04267d9cec8aa610e78265f4/fa06fd7e58b4116d-99/s2048x3072/6f93a7b7365dbba199d40fa064950edc8200f880.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: contain !important;
+}
+
+#workskin .summary .heading::after,
+#workskin .notes .heading::after,
+#work_endnotes .heading::after {
+  content: "" !important;
+  display: block !important;
+  width: 72% !important;
+  max-width: 360px !important;
+  height: 24px !important;
+  margin: 10px auto 18px auto !important;
+  background-image: url("https://64.media.tumblr.com/6f653a9d5fb88a8125b5f6a8b5403674/bc439c83b4d64b10-26/s2048x3072/5fe37c93a391fd3697babd9d638d83fe897526dc.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: contain !important;
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+#workskin .summary .heading::before {
+  content: "— ✦ Summary ✦ —" !important;
+}
+
+#workskin .notes .heading::before {
+  content: "— ✦ Notes ✦ —" !important;
+}
+
+#work_endnotes .heading::before {
+  content: "— ✦ End Notes ✦ —" !important;
+}
+
+html {
+  --ac-section-heading-size: 0.95rem;
+  --ac-section-heading-color: #6FA3D8;
+}
+
+#workskin .summary .heading::before,
+#workskin .notes .heading::before,
+#work_endnotes .heading::before {
+  font-size: var(--ac-section-heading-size) !important;
+  color: var(--ac-section-heading-color) !important;
+  letter-spacing: 0.04em !important;
+}
+
+#workskin .summary .heading::before,
+#workskin .notes .heading::before,
+#work_endnotes .heading::before {
+  display: inline-block !important;
+  margin-top: 0.5em !important;
+}
+
+#main .splash .favorite.module > h3,
+#main .splash .browse.module > h3,
+#main .splash .news.module > h3 {
+  padding-left: 0 !important;
+  text-indent: 0 !important;
+}
+
+#main .splash .favorite.module > h3::before,
+#main .splash .browse.module > h3::before,
+#main .splash .news.module > h3::before {
+  content: "" !important;
+  display: inline-block !important;
+  float: none !important;
+  width: 1.55em !important;
+  height: 1.55em !important;
+  margin-right: -13px !important;
+  position: relative !important;
+  left: -6px !important;
+  top: 0.08em !important;
+  vertical-align: baseline !important;
+  background-image: url("https://64.media.tumblr.com/2282cb401d8d98d1123f5ef76097f785/7f101a83c303f81d-06/s2048x3072/b8fdb0e52a8dc21af9d6ccb59ba9aa613149a34a.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: contain !important;
+}
+
+#main li.bookmark.blurb .status,
+#dashboard li.bookmark.blurb .status {
+  opacity: 0 !important;
+}
+
+#main li.bookmark.blurb .header h4.heading,
+#dashboard li.bookmark.blurb .header h4.heading {
+  position: relative !important;
+  overflow: visible !important;
+  z-index: 5 !important;
+}
+
+#main li.bookmark.blurb .header h4.heading::before,
+#dashboard li.bookmark.blurb .header h4.heading::before {
+  content: "" !important;
+  position: absolute !important;
+  top: -50px !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0 auto !important;
+  width: 34px !important;
+  height: 52px !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position: center !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+  z-index: 20 !important;
+}
+
+#main li.bookmark.blurb:has(.status .public) .header h4.heading::before,
+#dashboard li.bookmark.blurb:has(.status .public) .header h4.heading::before {
+  background-image: url("https://64.media.tumblr.com/c7a7f06c9cf6e5df6e5db142c97f9ce4/662770763583769c-e3/s400x600/ae93c2b74b6041c9ce27318e8d67a1e186571ba6.png") !important;
+}
+
+#main li.bookmark.blurb:has(.status .private) .header h4.heading::before,
+#dashboard li.bookmark.blurb:has(.status .private) .header h4.heading::before {
+  background-image: url("https://64.media.tumblr.com/bae1364479d929eb55e3b6e27d6be710/662770763583769c-a4/s400x600/d180a04e76ecf6364b16d455959641240e694deb.png") !important;
+}
+
+#main li.bookmark.blurb:has(.status .hidden) .header h4.heading::before,
+#dashboard li.bookmark.blurb:has(.status .hidden) .header h4.heading::before {
+  background-image: url("https://64.media.tumblr.com/258e68409bc5a81b60bb1e61c940638d/662770763583769c-25/s400x600/863b1406cb40198803d245a672b49af81a03a8f3.png") !important;
+}
+
+#main li.bookmark.blurb:has(.status .rec) .header h4.heading::before,
+#dashboard li.bookmark.blurb:has(.status .rec) .header h4.heading::before {
+  background-image: url("https://64.media.tumblr.com/bcc0c0654bcd77e01153abe3eef90e9f/662770763583769c-83/s400x600/605ead5e706fe75cd4332a594d6241d75dd7984e.png") !important;
+}
+
+#main li.series.blurb,
+#dashboard li.series.blurb,
+#main #user-series li.series.blurb,
+#dashboard #user-series li.series.blurb {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background-color: #FCEFEF !important;
+  background-image: url("https://64.media.tumblr.com/e3b0b45e43ddccee0fffd6dad6f78b65/33073648b2611c17-4b/s1280x1920/09e5bc3c93ea5613c5dcbb679236dc0e33977f0e.png"),
+    url("https://64.media.tumblr.com/7438e31eefb7aa96f26a7cf479c36212/33073648b2611c17-c3/s1280x1920/fdcc1f06747e664d0f11d4fd9f4048e08b3e3dd1.png"),
+    url("https://64.media.tumblr.com/36fb29faedb14446ac1aa172a7352077/33073648b2611c17-f6/s1280x1920/606d721424af910101928cab9c9ac238e825be27.png"),
+    url("https://64.media.tumblr.com/8829af73b414514641bd8488d5ff4020/33073648b2611c17-ef/s1280x1920/a8d956e8b518d5913e81402c33b46b7a180b4783.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: left -13px top -13px, right -13px top -13px, left -13px bottom -1px, right -13px bottom -13px !important;
+  background-size: 130px auto !important;
+  padding: 32px 15px 32px 15px !important;
+  margin-bottom: 20px !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+li.series.blurb > .header::before,
+li.series.blurb > .header::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 80px !important;
+  background-repeat: no-repeat !important;
+  background-position: center 60% !important;
+  background-size: 80px auto !important;
+  opacity: 1 !important;
+  z-index: 1 !important;
+  -webkit-filter: invert(20%) sepia(95%) saturate(4200%) hue-rotate(205deg) brightness(92%) contrast(105%) !important;
+  filter: invert(20%) sepia(95%) saturate(4200%) hue-rotate(205deg) brightness(92%) contrast(105%) !important;
+}
+
+li.series.blurb > .header {
+  position: relative !important;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+  background: transparent !important;
+}
+
+li.series.blurb > .header::before {
+  left: -15px !important;
+  background-image: url("https://64.media.tumblr.com/ac88605c29de1ee39b5c8c508c6bfd58/f13229866d1445cc-42/s2048x3072/d00c7a4fd733e74a3d08d2afc24395fc85bf76d4.png") !important;
+}
+
+li.series.blurb > .header::after {
+  right: -15px !important;
+  background-image: url("https://64.media.tumblr.com/692601cd5ed1c3fb7972b0d4c8c8455f/f13229866d1445cc-dc/s2048x3072/5533942c553adc7b83b8a06a6d39817dbc47da0d.png") !important;
+}
+
+li.series.blurb .header h4.heading a:link,
+li.series.blurb .header h4.heading a:visited {
+  color: #5A2A7A !important;
+  text-decoration: none !important;
+}
+
+li.series.blurb .header h4.heading a:hover {
+  color: #8A1F54 !important;
+}
+
+li.series.blurb .header a[rel="author"]:link,
+li.series.blurb .header a[rel="author"]:visited {
+  color: #5A2A7A !important;
+}
+
+li.series.blurb .header .datetime {
+  color: rgba(90,42,122,.75) !important;
+  border-bottom: none !important;
+  text-decoration: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+li.series.blurb .header .datetime::after {
+  display: none !important;
+}
+
+#main li.series.blurb ul.required-tags li + li::before,
+#dashboard li.series.blurb ul.required-tags li + li::before {
+  content: " ✦ " !important;
+  color: #5A2A7A !important;
+  text-shadow: none !important;
+  font-size: 0.9em !important;
+  margin: 0 4px !important;
+}
+
+#main li.series.blurb ul.required-tags li span::after,
+#dashboard li.series.blurb ul.required-tags li span::after {
+  color: #5A2A7A !important;
+  text-shadow: none !important;
+  font-weight: bold !important;
+  font-family: inherit !important;
+}
+
+#main li.series.blurb ul.required-tags li span,
+#dashboard li.series.blurb ul.required-tags li span {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+li.series.blurb > .header::before {
+  left: 0px !important;
+}
+
+li.series.blurb > .header::after {
+  right: 0px !important;
+}
+
+#workskin dl.work.meta,
+#workskin .work.meta,
+#main dl.work.meta,
+#main .work.meta {
+  position: relative !important;
+  z-index: 0 !important;
+}
+
+#workskin dl.work.meta::before,
+#workskin .work.meta::before,
+#main dl.work.meta::before,
+#main .work.meta::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  z-index: 0 !important;
+  background-image: url("https://64.media.tumblr.com/ee3e38fe84bdb16e44de33e9a3e81547/85621ce5d7732b9e-25/s1280x1920/2f3f239b6b9de746cc28d06a108ba71a7b9ff339.png"),
+    url("https://64.media.tumblr.com/ec6176133f46cee3c970a04aca416ab4/85621ce5d7732b9e-6e/s1280x1920/c2cbf98c33560d9e7d49e69520ec2d146e28f039.png"),
+    url("https://64.media.tumblr.com/27869ecbf02be86278d4e5932a22a324/85621ce5d7732b9e-05/s1280x1920/6d74d90001ef77103cb5e6e70eb78f3075454bb8.png"),
+    url("https://64.media.tumblr.com/0e15ba6a2fd775bf1fa7803c93f75beb/85621ce5d7732b9e-e5/s1280x1920/90abf45034f1695a7717b4c7a3c31f23f4ed3241.png") !important;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat !important;
+  background-position: left top, right top, left bottom, right bottom !important;
+  background-size: 120px auto, 120px auto, 120px auto, 120px auto !important;
+  opacity: 1 !important;
+}
+
+#workskin dl.work.meta > *,
+#workskin .work.meta > *,
+#main dl.work.meta > *,
+#main .work.meta > * {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+#workskin dl.work.meta::before,
+#workskin .work.meta::before,
+#main dl.work.meta::before,
+#main .work.meta::before {
+  background-size: 100px auto, 100px auto, 100px auto, 100px auto !important;
+}
+
+#workskin dl.work.meta::before,
+#workskin dl.work.meta::after,
+#workskin .work.meta::before,
+#workskin .work.meta::after,
+#main dl.work.meta::before,
+#main dl.work.meta::after,
+#main .work.meta::before,
+#main .work.meta::after {
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+#workskin dl.work.meta dd ul.commas li::after {
+  content: "" !important;
+}
+
+#workskin dl.work.meta dd ul.commas {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between !important;
+  max-width: 36rem !important;
+  margin: 0.35em auto 0 auto !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+#workskin dl.work.meta dd ul.commas li {
+  width: 48% !important;
+  margin: 0.18em 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+#workskin dl.work.meta dd ul.commas li:nth-child(even) {
+  text-align: right !important;
+}
+
+#workskin dl.work.meta dd ul.commas li:only-child {
+  width: 100% !important;
+  text-align: center !important;
+}
+
+#workskin dl.work.meta dd.warning.tags,
+#main dl.work.meta dd.warning.tags,
+#workskin dl.work.meta dd.fandom.tags,
+#main dl.work.meta dd.fandom.tags,
+#workskin dl.work.meta dd.language,
+#main dl.work.meta dd.language {
+  position: relative !important;
+  overflow: visible !important;
+}
+
+#workskin dl.work.meta dd.warning.tags *,
+#main dl.work.meta dd.warning.tags *,
+#workskin dl.work.meta dd.fandom.tags *,
+#main dl.work.meta dd.fandom.tags *,
+#workskin dl.work.meta dd.language *,
+#main dl.work.meta dd.language * {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+#workskin dl.work.meta dd.warning.tags::before,
+#main dl.work.meta dd.warning.tags::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  width: 6.4em !important;
+  height: 6.4em !important;
+  transform: translate(-50%, -50%) translateX(-7.2em) !important;
+  margin-top: -0.20em !important;
+  z-index: 1 !important;
+  background-image: url("https://64.media.tumblr.com/7ee43fa7a7ec4c8dca93793165066b73/af5802b3bdafbe2b-fe/s2048x3072/f240354931f8ef2adfda79e19eaf55c6e5dfb97f.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: contain !important;
+}
+
+#workskin dl.work.meta dd.fandom.tags::after,
+#main dl.work.meta dd.fandom.tags::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  width: 6.0em !important;
+  height: 6.0em !important;
+  transform: translate(-50%, -50%) translateX(7.2em) !important;
+  margin-top: -0.20em !important;
+  z-index: 1 !important;
+  background-image: url("https://64.media.tumblr.com/d62f5b3e9d4118da7b69d70cb73b9772/af5802b3bdafbe2b-24/s2048x3072/b8ea9e5872b3ac896b3e02af2a68080156d392e0.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: contain !important;
+}
+
+#workskin dl.work.meta dd.language::before,
+#main dl.work.meta dd.language::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  width: 5.6em !important;
+  height: 5.6em !important;
+  transform: translate(-50%, -50%) translateX(-7.0em) !important;
+  margin-top: -0.10em !important;
+  z-index: 1 !important;
+  background-image: url("https://64.media.tumblr.com/75cc9d48b3efa06d4cec2adb4cfe18b7/6ff9ce7f222b90ec-93/s2048x3072/6d048dd5176f201a434cf16b0203ac6b095efa97.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: contain !important;
+}
+
+#workskin dl.work.meta dd.language::after,
+#main dl.work.meta dd.language::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  width: 5.6em !important;
+  height: 5.6em !important;
+  transform: translate(-50%, -50%) translateX(7.0em) !important;
+  margin-top: -0.10em !important;
+  z-index: 1 !important;
+  background-image: url("https://64.media.tumblr.com/74679cbef8dc66bd2508b651ea862b51/6ff9ce7f222b90ec-0a/s2048x3072/078dafb69256c25b34ade0189dbefd08b8991764.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: contain !important;
+}
+
+html body {
+  --bp-porter-h: 120px;
+  --bp-porter-inset: 22px;
+  --bp-porter-filter: invert(20%) sepia(95%) saturate(4200%) hue-rotate(205deg) brightness(92%) contrast(105%);
+}
+
+html body #footer {
+  position: relative !important;
+  overflow: visible !important;
+}
+
+html body #footer::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 94.5% !important;
+  width: 100% !important;
+  height: var(--bp-porter-h) !important;
+  background-image: url("https://64.media.tumblr.com/e920d6a63726965ebf7301f403e9dee4/0069ac3ce88ffc81-f8/s2048x3072/c5fbf7966c9773091ed7c96b2ded7ce1cd33ae95.png"),
+    url("https://64.media.tumblr.com/c019345ec161ff0b02a848129cfef791/0069ac3ce88ffc81-23/s2048x3072/a7f53fc5c93c75b63b92de588ddff3f538d62e56.png"),
+    url("https://64.media.tumblr.com/1ab4703e1b4335fdcabb939221da6048/0069ac3ce88ffc81-00/s2048x3072/bbddf1ded6bb93cf94085358eccd78888b97c20e.png") !important;
+  background-repeat: no-repeat, no-repeat, no-repeat !important;
+  background-position: left var(--bp-porter-inset) bottom,
+    center bottom,
+    right var(--bp-porter-inset) bottom !important;
+  background-size: auto 100%, auto 100%, auto 100% !important;
+  -webkit-filter: brightness(0) saturate(100%) invert(18%) sepia(60%) saturate(5200%) hue-rotate(255deg) brightness(60%) contrast(135%) !important;
+  filter: brightness(0) saturate(100%) invert(18%) sepia(60%) saturate(5200%) hue-rotate(255deg) brightness(60%) contrast(135%) !important;
+}
+
+html body {
+  --bp-porter-h: 86px;
+  --bp-porter-inset: 10px;
+}
+
+#workskin dl.work.meta dd.warning.tags ul.commas,
+#main dl.work.meta dd.warning.tags ul.commas {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+}
+
+#workskin dl.work.meta dd.warning.tags ul.commas li,
+#main dl.work.meta dd.warning.tags ul.commas li {
+  width: auto !important;
+  display: block !important;
+  text-align: center !important;
+  margin: 0.15em 0 !important;
+}
+
+#dashboard.own ul.primary .current,
+#dashboard.own ul.secondary .current,
+#dashboard.own ul.navigation .current,
+#dashboard.own ul.actions .current,
+#dashboard.own ul.primary .selected,
+#dashboard.own ul.secondary .selected,
+#dashboard.own ul.navigation .selected,
+#dashboard.own ul.actions .selected,
+#main ul.primary .current,
+#main ul.secondary .current,
+#main ul.navigation .current,
+#main ul.actions .current,
+#main ul.navigation.actions .current,
+#main ul.primary .selected,
+#main ul.secondary .selected,
+#main ul.navigation .selected,
+#main ul.actions .selected,
+#main ul.navigation.actions .selected {
+  position: relative !important;
+}
+
+#dashboard.own ul.primary .current::after,
+#dashboard.own ul.secondary .current::after,
+#dashboard.own ul.navigation .current::after,
+#dashboard.own ul.actions .current::after,
+#dashboard.own ul.primary .selected::after,
+#dashboard.own ul.secondary .selected::after,
+#dashboard.own ul.navigation .selected::after,
+#dashboard.own ul.actions .selected::after,
+#main ul.primary .current::after,
+#main ul.secondary .current::after,
+#main ul.navigation .current::after,
+#main ul.actions .current::after,
+#main ul.navigation.actions .current::after,
+#main ul.primary .selected::after,
+#main ul.secondary .selected::after,
+#main ul.navigation .selected::after,
+#main ul.actions .selected::after,
+#main ul.navigation.actions .selected::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 100% !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 1.8em !important;
+  height: 1.8em !important;
+  margin-left: -0.15em !important;
+  background-image: url("https://64.media.tumblr.com/558f723dfdf9f50deb6da812b9fa9d6b/328b1b287ed42777-c3/s400x600/1d673bb4e61ec977ae85d0f5d6a7884b2c4c7ad0.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: contain !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+#main a.tag,
+#workskin a.tag {
+  position: relative !important;
+  overflow: visible !important;
+  transition: padding 0.2s ease-in-out !important;
+}
+
+#main a.tag:hover,
+#main a.tag:focus,
+#workskin a.tag:hover,
+#workskin a.tag:focus {
+  padding-left: 2.6em !important;
+  padding-right: 2.6em !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+
+#main a.tag:hover::before,
+#main a.tag:focus::before,
+#workskin a.tag:hover::before,
+#workskin a.tag:focus::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 0.4em !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 1.6em !important;
+  height: 1.6em !important;
+  background-image: url("https://64.media.tumblr.com/16e2272b61a85ef33a1014241371c963/328b1b287ed42777-98/s400x600/21e0347b39250e36fccf0c76269a77a94a7ce558.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: contain !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+#main a.tag:hover::after,
+#main a.tag:focus::after,
+#workskin a.tag:hover::after,
+#workskin a.tag:focus::after {
+  content: "" !important;
+  position: absolute !important;
+  right: 0.4em !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 1.6em !important;
+  height: 1.6em !important;
+  background-image: url("https://64.media.tumblr.com/16e2272b61a85ef33a1014241371c963/328b1b287ed42777-98/s400x600/21e0347b39250e36fccf0c76269a77a94a7ce558.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: contain !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+html body img[src$="/images/lockblue.png"] {
+  content: url("https://64.media.tumblr.com/ce44c0e08dbbdce561d95f0c20f5684a/f0e6c6f25b059d9c-a5/s400x600/2419b84641b942896b929443a6674bc661219d03.png") !important;
+  height: 20px !important;
+  width: auto !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+  vertical-align: middle !important;
+}
+
+#main h1 a.tag,
+#main h2 a.tag,
+#main h3 a.tag,
+#main h1 a.tag:hover,
+#main h2 a.tag:hover,
+#main h3 a.tag:hover,
+#main h1 a.tag:focus,
+#main h2 a.tag:focus,
+#main h3 a.tag:focus,
+#main h1 a.tag:active,
+#main h2 a.tag:active,
+#main h3 a.tag:active {
+  padding-left: 0.35em !important;
+  padding-right: 0.35em !important;
+  transition: none !important;
+}
+
+#main h1 a.tag::before,
+#main h1 a.tag::after,
+#main h2 a.tag::before,
+#main h2 a.tag::after,
+#main h3 a.tag::before,
+#main h3 a.tag::after {
+  content: none !important;
+  display: none !important;
+  background-image: none !important;
+}
+
+#main form.bookmark fieldset,
+#main #new_bookmark fieldset,
+#main #edit_bookmark fieldset,
+#main #bookmark-form fieldset {
+  background: transparent !important;
+}
+
+#main form.bookmark input[type="text"],
+#main form.bookmark textarea,
+#main #bookmark-form input[type="text"],
+#main #bookmark-form textarea {
+  border-color: #5a2b77 !important;
+}
+
+#main form.bookmark input[type="text"]:focus,
+#main form.bookmark textarea:focus,
+#main #bookmark-form input[type="text"]:focus,
+#main #bookmark-form textarea:focus {
+  border-color: #7A3AA6 !important;
+}
+
+#main form dl.work.meta,
+#main form .work.meta {
+  background-image: none !important;
+}
+
+#main form dl.work.meta::before,
+#main form dl.work.meta::after,
+#main form .work.meta::before,
+#main form .work.meta::after {
+  content: none !important;
+  background-image: none !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+#main form dl.work.meta dd.warning.tags::before,
+#main form dl.work.meta dd.warning.tags::after,
+#main form dl.work.meta dd.fandom.tags::before,
+#main form dl.work.meta dd.fandom.tags::after,
+#main form dl.work.meta dd.language::before,
+#main form dl.work.meta dd.language::after {
+  content: none !important;
+  background-image: none !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+html body #main #bookmark-form .character_counter,
+html body #main #bookmark-form p.character_counter,
+html body #main #bookmark-form .footnote,
+html body #main #bookmark-form p.footnote {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main #add_comment,
+html body #main #add_comment label,
+html body #main #add_comment .footnote,
+html body #main #add_comment .character_counter {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main #add_comment textarea,
+html body #main #add_comment input[type="text"],
+html body #main #add_comment input[type="email"],
+html body #main #add_comment input[type="url"] {
+  color: #2A2423 !important;
+  -webkit-text-fill-color: #2A2423 !important;
+  border-color: #6FA3D8 !important;
+}
+
+html body #main #add_comment textarea:focus,
+html body #main #add_comment input[type="text"]:focus,
+html body #main #add_comment input[type="email"]:focus,
+html body #main #add_comment input[type="url"]:focus {
+  border-color: #6FA3D8 !important;
+  outline-color: #6FA3D8 !important;
+}
+
+#dashboard:not(.own) ul.primary .current,
+#dashboard:not(.own) ul.secondary .current,
+#dashboard:not(.own) ul.navigation .current,
+#dashboard:not(.own) ul.actions .current,
+#dashboard:not(.own) ul.primary .selected,
+#dashboard:not(.own) ul.secondary .selected,
+#dashboard:not(.own) ul.navigation .selected,
+#dashboard:not(.own) ul.actions .selected {
+  position: relative !important;
+}
+
+#dashboard:not(.own) ul.primary .current::after,
+#dashboard:not(.own) ul.secondary .current::after,
+#dashboard:not(.own) ul.navigation .current::after,
+#dashboard:not(.own) ul.actions .current::after,
+#dashboard:not(.own) ul.primary .selected::after,
+#dashboard:not(.own) ul.secondary .selected::after,
+#dashboard:not(.own) ul.navigation .selected::after,
+#dashboard:not(.own) ul.actions .selected::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 100% !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 1.8em !important;
+  height: 1.8em !important;
+  margin-left: -0.15em !important;
+  background-image: url("https://64.media.tumblr.com/558f723dfdf9f50deb6da812b9fa9d6b/328b1b287ed42777-c3/s400x600/1d673bb4e61ec977ae85d0f5d6a7884b2c4c7ad0.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: contain !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+html body li.work.blurb dl.stats,
+html body li.bookmark.blurb dl.stats,
+html body .wrapper dl.work.meta dd.stats dl.stats {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body .wrapper dl.work.meta dd.stats dl.stats dd::before {
+  color: inherit !important;
+  -webkit-text-fill-color: inherit !important;
+}
+
+html body #comments ol.thread,
+html body #feedback ol.thread {
+  position: relative !important;
+  margin-left: 0 !important;
+  padding-left: 1.6rem !important;
+  border-left: none !important;
+}
+
+html body #comments ol.thread::before,
+html body #feedback ol.thread::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 0.75rem !important;
+  top: 0.2rem !important;
+  bottom: 0.2rem !important;
+  width: 2px !important;
+  background: rgba(111, 163, 216, 0.45) !important;
+  z-index: 0 !important;
+}
+
+html body #comments ol.thread > li.comment,
+html body #feedback ol.thread > li.comment {
+  position: relative !important;
+  z-index: 1 !important;
+  background: rgba(255, 255, 255, 0.20) !important;
+  border-radius: 16px !important;
+  padding-left: 1rem !important;
+}
+
+html body #comments ol.thread > li.comment::after,
+html body #feedback ol.thread > li.comment::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0.63rem !important;
+  top: 1.25rem !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 999px !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+  border: 2px solid rgba(111, 163, 216, 0.60) !important;
+  z-index: 2 !important;
+}
+
+html body #comments ol.thread > li.comment h4.byline::before,
+html body #feedback ol.thread > li.comment h4.byline::before {
+  content: "" !important;
+  display: inline-block !important;
+  width: 1.05rem !important;
+  height: 1.05rem !important;
+  margin-right: 0.35rem !important;
+  vertical-align: middle !important;
+  background-image: url("https://64.media.tumblr.com/857b466dea142f08e442ee4adf4d714a/332713c021ed75c0-b8/s400x600/8f6201b832ee569fcd081df73f1620cde2e507ca.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  opacity: 0.95 !important;
+}
+
+html body #comments ol.thread ol.thread,
+html body #feedback ol.thread ol.thread {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+html body #main #kudos,
+html body #main fieldset.kudos,
+html body #main #kudos .kudos {
+  background-color: rgba(255, 250, 252, 0.78) !important;
+  border-color: rgba(52, 102, 214, 0.22) !important;
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body #main #kudos p.kudos,
+html body #main fieldset.kudos p.kudos {
+  background: transparent !important;
+}
+
+html body #main #kudos a {
+  color: #5A2A7A !important;
+}
+
+html body #main #kudos a:visited {
+  color: #6B4AA5 !important;
+}
+
+html body #footer,
+html body #outer #footer,
+html body #main #footer {
+  background: #B8D2EE !important;
+  color: #5A2A7A !important;
+  border-top: 1px solid rgba(90, 42, 122, 0.16) !important;
+}
+
+html body #footer *,
+html body #outer #footer * {
+  color: #5A2A7A !important;
+}
+
+html body #footer a,
+html body #outer #footer a {
+  color: #5A2A7A !important;
+}
+
+html body #footer a:hover,
+html body #outer #footer a:hover {
+  color: #7A3AA6 !important;
+}
+
+html body #header h1.heading a,
+html body #outer #header h1.heading a {
+  background-image: url("https://64.media.tumblr.com/fecf2d7ad44fd7e65cdda159dec1be66/be39de339868b4f0-16/s1280x1920/2f870f63f651bc759e702ab32327941eb836f43f.png") !important;
+}
+
+html body #outer #header h1.heading a {
+  width: 360px !important;
+  height: 180px !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+html body {
+  --ac-a4-card-max: 50rem;
+}
+
+html body #main li.work.blurb,
+html body #main li.bookmark.blurb,
+html body #main li.series.blurb,
+html body #main li.collection.blurb,
+html body #main li.external_work.blurb,
+html body #dashboard li.work.blurb,
+html body #dashboard li.bookmark.blurb,
+html body #dashboard li.series.blurb,
+html body #dashboard li.collection.blurb,
+html body #dashboard li.external_work.blurb {
+  width: 96% !important;
+  max-width: var(--ac-a4-card-max) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
+}
+
+html body #main .actions a,
+html body #workskin .actions a,
+html body #dashboard .actions a,
+html body #main .actions input[type="submit"],
+html body #main .actions button,
+html body #workskin .actions input[type="submit"],
+html body #dashboard .actions input[type="submit"] {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid transparent !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+html body #main .actions a:hover,
+html body #main .actions a:focus,
+html body #workskin .actions a:hover,
+html body #workskin .actions a:focus,
+html body #dashboard .actions a:hover,
+html body #dashboard .actions a:focus,
+html body #main .actions input[type="submit"]:hover,
+html body #main .actions input[type="submit"]:focus,
+html body #main .actions button:hover,
+html body #main .actions button:focus {
+  color: #8A1F54 !important;
+  -webkit-text-fill-color: #8A1F54 !important;
+  background: transparent !important;
+  border-color: transparent !important;
+  border-bottom-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+  text-decoration: none !important;
+}
+
+html body #header #greeting .menu li > a,
+html body #header #greeting .dropdown-menu li > a,
+html body #header #greeting .menu li > span,
+html body #header #greeting .dropdown-menu li > span {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+html body #header #greeting .menu li > a:hover,
+html body #header #greeting .dropdown-menu li > a:hover,
+html body #header #greeting .menu li > a:focus,
+html body #header #greeting .dropdown-menu li > a:focus {
+  color: #8A1F54 !important;
+  -webkit-text-fill-color: #8A1F54 !important;
+  background: rgba(111,163,216,.10) !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+html body #main input,
+html body #main textarea,
+html body #main select {
+  color: #5A2A7A !important;
+  -webkit-text-fill-color: #5A2A7A !important;
+}
+
+html body .home .primary.header.module .icon a {
+  position: relative !important;
+  display: block !important;
+  overflow: visible !important;
+}
+
+html body .home .primary.header.module .icon a::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: -40px !important;
+  width: 150px !important;
+  height: 150px !important;
+  margin-left: -77.5px !important;
+  background-image: url("https://64.media.tumblr.com/116c57d28ab179b5196d2d0b427007f4/633c7d0ee6808aa3-ae/s1280x1920/c84d4fbed66d2822b8d7f75fade7c93de4e4a806.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: contain !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+  z-index: 2 !important;
+}
+
+#chapters .userstuff,
+#chapters .userstuff p,
+#chapters .userstuff li,
+#chapters .userstuff blockquote {
+  color: var(--ac-color-deep) !important;
+  font-family: -apple-system, BlinkMacSystemFont,
+                   "PingFang SC", "Microsoft YaHei",
+                   "Helvetica Neue", Arial, sans-serif !important;
+  line-height: 1.5 !important;
+  font-size: 0.9rem !important;
+}
+
+html body {
+  font-size: 110% !important;
+}
