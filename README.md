@@ -1,3 +1,5 @@
+https://64.media.tumblr.com/c6ca45a55470f7260b6989be2f8d38cf/9b421fc6683cebf3-36/s2048x3072/d0b42f60474b683ff4f4974cafa8cb990e45e15f.jpg
+
 ​🛠️ Installation Guide 
 ​Step 1: Create the Base Skin
 ​Create a new site skin.
