@@ -3754,6 +3754,32 @@ html body .home .primary.header.module .icon a::after {
   z-index: 2 !important;
 }
 
+html body #footer {
+  line-height: 1.7 !important;
+}
+
+html body #footer ul {
+  margin: 0 !important;
+  padding: 0 0 0 1.5em !important;
+}
+
+html body #footer li {
+  margin: 0.45em 0 !important;
+}
+
+html body #footer a {
+  display: inline-block !important;
+  padding: 0.12em 0 !important;
+  line-height: 1.7 !important;
+}
+
+html body #footer,
+html body #footer * {
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  hyphens: manual !important;
+}
+
 #chapters .userstuff,
 #chapters .userstuff p,
 #chapters .userstuff li,
