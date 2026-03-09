@@ -3780,6 +3780,22 @@ html body #footer * {
   hyphens: manual !important;
 }
 
+#main form fieldset,
+#main fieldset,
+#main fieldset fieldset,
+#main #preview,
+#main #preview .wrapper,
+#main .own,
+#main .secondary,
+#main .secondary form {
+  background: #FFF8E7 !important;
+  border: 1px solid #4E342E !important;
+  box-shadow: 0 8px 18px rgba(78, 52, 46, 0.08),
+              0 2px 4px rgba(78, 52, 46, 0.06) !important;
+  border-radius: 10px !important;
+  color: #2B1F23 !important;
+}
+
 #main #preview,
 #main #preview .wrapper,
 #main #preview .userstuff {
