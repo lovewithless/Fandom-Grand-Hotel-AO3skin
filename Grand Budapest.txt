@@ -3903,6 +3903,40 @@ html body #footer * {
   hyphens: manual !important;
 }
 
+#main fieldset,
+#main fieldset fieldset,
+#main #preview,
+#main #preview .wrapper,
+#main #preview .userstuff,
+#main .own,
+#main .secondary,
+#main .secondary form {
+  background: #FFE4E1 !important;
+  color: #2A2423 !important;
+  border: 1px solid #E2BFC6 !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 24px rgba(90, 42, 122, 0.06) !important;
+}
+
+#main #preview,
+#main #preview .wrapper,
+#main #preview .userstuff {
+  background-color: #FCEFEF !important;
+  color: #2A2423 !important;
+  border: none !important;
+  border-radius: 16px !important;
+  padding: 16px !important;
+  box-shadow: 0 8px 24px rgba(90, 42, 122, 0.06) !important;
+}
+
+#main .work-wrapper,
+#main #workskin,
+#main .work {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
 #chapters .userstuff,
 #chapters .userstuff p,
 #chapters .userstuff li,
