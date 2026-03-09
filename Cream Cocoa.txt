@@ -3780,6 +3780,25 @@ html body #footer * {
   hyphens: manual !important;
 }
 
+#main #preview,
+#main #preview .wrapper,
+#main #preview .userstuff {
+  background-color: #FFF8E7 !important;
+  color: #2B1F23 !important;
+  border: none !important;
+  border-radius: 16px !important;
+  padding: 16px !important;
+  box-shadow: 0px 8px 24px rgba(78, 52, 46, 0.08) !important;
+}
+
+#main .work-wrapper,
+#main #workskin,
+#main .work {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
 #chapters .userstuff,
 #chapters .userstuff p,
 #chapters .userstuff li,
