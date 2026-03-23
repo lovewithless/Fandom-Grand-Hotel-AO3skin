@@ -3832,3 +3832,44 @@ html body #footer * {
 html body {
   font-size: 110% !important;
 }
+
+/* 1. 独立书签页面：上米色底、去大黑框、去阴影 */
+#main form#new_bookmark,
+#main form[id^="edit_bookmark"] {
+  background-color: #FFF8E7 !important;
+  border-radius: 16px !important;
+  padding: 25px !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* 2. 剥除独立书签页面自带的内层白底和黑线（不破坏排版） */
+#main form#new_bookmark .wrapper,
+#main form#new_bookmark fieldset,
+#main form[id^="edit_bookmark"] .wrapper,
+#main form[id^="edit_bookmark"] fieldset {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* 3. 弹窗下拉书签：上米色底、去黑框、去阴影 */
+#main div.dynamic,
+#main #bookmark-form.dynamic {
+  background-color: #FFF8E7 !important;
+  border-radius: 16px !important;
+  padding: 16px !important;
+  border: none !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+}
+
+/* 4. 剥除弹窗内层的白底和白角 */
+#main div.dynamic form,
+#main div.dynamic form .wrapper,
+#main div.dynamic form fieldset,
+#main #bookmark-form.dynamic form fieldset {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
