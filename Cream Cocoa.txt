@@ -3426,6 +3426,8 @@ html body img[src$="/images/lockblue.png"] {
 #main #edit_bookmark fieldset,
 #main #bookmark-form fieldset {
   background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 #main form.bookmark input[type="text"],
@@ -3805,7 +3807,6 @@ html body #footer * {
 #main .preview .wrapper,
 #main #preview .userstuff,
 #main .preview .userstuff,
-
 #main form fieldset,
 #main fieldset,
 #main fieldset fieldset {
