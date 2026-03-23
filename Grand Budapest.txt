@@ -3521,6 +3521,8 @@ html body img[src$="/images/lockblue.png"] {
 #main #edit_bookmark fieldset,
 #main #bookmark-form fieldset {
   background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 #main form.bookmark input[type="text"],
@@ -3928,7 +3930,6 @@ html body #footer * {
 #main .preview .wrapper,
 #main #preview .userstuff,
 #main .preview .userstuff,
-
 #main form fieldset,
 #main fieldset,
 #main fieldset fieldset {
@@ -3953,4 +3954,41 @@ html body #footer * {
 
 html body {
   font-size: 110% !important;
+}
+
+#main form#new_bookmark,
+#main form[id^="edit_bookmark"] {
+  background-color: #FCEFEF !important;
+  border-radius: 16px !important;
+  padding: 25px !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#main form#new_bookmark .wrapper,
+#main form#new_bookmark fieldset,
+#main form[id^="edit_bookmark"] .wrapper,
+#main form[id^="edit_bookmark"] fieldset {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#main div.dynamic,
+#main #bookmark-form.dynamic {
+  background-color: #FCEFEF !important;
+  border-radius: 16px !important;
+  padding: 16px !important;
+  border: none !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+}
+
+#main div.dynamic form,
+#main div.dynamic form .wrapper,
+#main div.dynamic form fieldset,
+#main #bookmark-form.dynamic form fieldset {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
