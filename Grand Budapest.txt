@@ -481,48 +481,12 @@ html body #dashboard:not(.own) {
 }
 
 html body #dashboard:not(.own) ul.primary li a,
-html body #dashboard:not(.own) ul.secondary li a,
-html body #dashboard:not(.own) ul.navigation li a {
+html body #dashboard:not(.own) ul.secondary li a {
   font-size: 1em !important;
   line-height: 1.2 !important;
   white-space: nowrap !important;
 }
 
-#dashboard:not(.own) ul.navigation,
-#dashboard:not(.own) ul.primary,
-#dashboard:not(.own) ul.secondary,
-#dashboard:not(.own) ul.actions {
-  margin: 0.2em auto 0.9em auto !important;
-  padding: 0 !important;
-  list-style: none !important;
-  width: 100% !important;
-  text-align: center !important;
-  justify-content: center !important;
-}
-
-#dashboard:not(.own) ul.navigation li,
-#dashboard:not(.own) ul.primary li,
-#dashboard:not(.own) ul.secondary li,
-#dashboard:not(.own) ul.actions li {
-  float: none !important;
-  display: inline-block !important;
-  vertical-align: middle !important;
-  margin: 0 0.75em 0.55em 0.75em !important;
-}
-
-html body #dashboard:not(.own) {
-  font-size: 0.82em !important;
-}
-
-html body #dashboard:not(.own) ul.primary li a,
-html body #dashboard:not(.own) ul.secondary li a,
-html body #dashboard:not(.own) ul.navigation li a {
-  font-size: 1em !important;
-  line-height: 1.2 !important;
-  white-space: nowrap !important;
-}
-
-#dashboard:not(.own) ul.navigation,
 #dashboard:not(.own) ul.primary,
 #dashboard:not(.own) ul.secondary,
 #dashboard:not(.own) ul.actions {
@@ -538,7 +502,6 @@ html body #dashboard:not(.own) ul.navigation li a {
   text-align: center !important;
 }
 
-#dashboard:not(.own) ul.navigation li,
 #dashboard:not(.own) ul.primary li,
 #dashboard:not(.own) ul.secondary li,
 #dashboard:not(.own) ul.actions li {
@@ -547,8 +510,6 @@ html body #dashboard:not(.own) ul.navigation li a {
   margin: 0 0.75em 0.55em 0.75em !important;
 }
 
-#dashboard:not(.own) ul.navigation li a,
-#dashboard:not(.own) ul.navigation li span,
 #dashboard:not(.own) ul.primary li a,
 #dashboard:not(.own) ul.primary li span,
 #dashboard:not(.own) ul.secondary li a,
@@ -3991,4 +3952,339 @@ html body {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
+}
+
+#main p.status span.private .text,
+#dashboard p.status span.private .text {
+  display: none !important;
+}
+
+/* ==== Grand Budapest Hotel 配色变量 ==== */
+:root {
+  --gb-bg: #FCEFEF;
+  --gb-bg-soft: rgba(252, 239, 239, 0.58);
+  --gb-bg-soft-2: rgba(252, 239, 239, 0.72);
+  --gb-bg-hover: #FFE4E1;
+  --gb-text: #5A2A7A;
+  --gb-text-deep: #2A2423;
+  --gb-hover: #8A1F54;
+  --gb-hover-2: #B0184A;
+  --gb-border: #6FA3D8;
+  --gb-border-soft: rgba(111, 163, 216, 0.45);
+  --gb-border-softer: rgba(111, 163, 216, 0.28);
+  --gb-shadow: rgba(90, 42, 122, 0.08);
+}
+
+/* 只给新闻页标题保留下划线 */
+html body #main .news .userstuff h2,
+html body #main .news .userstuff h3,
+html body #main .news .userstuff h4 {
+  color: var(--gb-text) !important;
+  border-bottom: 1px solid var(--gb-border-soft) !important;
+  padding-bottom: 0.18em !important;
+  box-shadow: none !important;
+}
+
+/* 新闻页标题里的链接 */
+html body #main .news .userstuff h2 a,
+html body #main .news .userstuff h3 a,
+html body #main .news .userstuff h4 a {
+  color: var(--gb-text) !important;
+  border-bottom: none !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+
+/* hover */
+html body #main .news .userstuff h2 a:hover,
+html body #main .news .userstuff h3 a:hover,
+html body #main .news .userstuff h4 a:hover {
+  color: var(--gb-hover) !important;
+  border-bottom: none !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+
+/* 明确去掉评论区、preface、正文和后续章节的线 */
+html body #main #add_comment h3.heading,
+html body #main .preface h3,
+html body #main .userstuff:not(.news .userstuff) h2,
+html body #main .userstuff:not(.news .userstuff) h3,
+html body #main .userstuff:not(.news .userstuff) h4 {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* 专门修复收件箱中他人评论通知的背板 */
+#main .inbox li.comment.group, 
+#main .inbox li.unread.comment.group,
+#main .inbox .comment.blurb {
+    background-color: var(--gb-bg-soft) !important;
+    border: none !important;
+    box-shadow: 0px 8px 24px var(--gb-shadow) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.92) !important;
+    border-left: 1px solid var(--gb-border-softer) !important;
+    border-radius: 20px !important;
+    padding: 18px 16px !important;
+    margin: 0 0 18px 0 !important;
+    color: var(--gb-text) !important;
+    -webkit-text-fill-color: var(--gb-text) !important;
+}
+
+/* 确保内部所有文字颜色一致 */
+#main .inbox li.comment.group *,
+#main .inbox li.unread.comment.group * {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: var(--gb-text) !important;
+    -webkit-text-fill-color: var(--gb-text) !important;
+}
+
+/* 收件箱评论里的 Select 美化 */
+
+html body #main li.comment.group ul.actions li,
+html body #main li.unread.comment.group ul.actions li,
+html body #dashboard li.comment.group ul.actions li,
+html body #dashboard li.unread.comment.group ul.actions li {
+  display: inline-block !important;
+  margin-right: 10px !important;
+  vertical-align: middle !important;
+}
+
+/* Select 外层文字按钮 */
+html body #main li.comment.group ul.actions label,
+html body #main li.unread.comment.group ul.actions label,
+html body #dashboard li.comment.group ul.actions label,
+html body #dashboard li.unread.comment.group ul.actions label {
+  display: inline-block !important;
+  padding: 6px 12px !important;
+  border: 1px solid var(--gb-border-soft) !important;
+  border-radius: 12px !important;
+  background: var(--gb-bg-soft-2) !important;
+  box-shadow: none !important;
+  color: var(--gb-text) !important;
+  -webkit-text-fill-color: var(--gb-text) !important;
+  line-height: 1.2 !important;
+}
+
+/* 里面的小方框 */
+html body #main li.comment.group ul.actions input[type="checkbox"],
+html body #main li.unread.comment.group ul.actions input[type="checkbox"],
+html body #dashboard li.comment.group ul.actions input[type="checkbox"],
+html body #dashboard li.unread.comment.group ul.actions input[type="checkbox"] {
+  accent-color: var(--gb-hover) !important;
+  vertical-align: middle !important;
+  margin-right: 6px !important;
+  transform: scale(1.08) !important;
+}
+
+/* hover */
+html body #main li.comment.group ul.actions label:hover,
+html body #main li.unread.comment.group ul.actions label:hover,
+html body #dashboard li.comment.group ul.actions label:hover,
+html body #dashboard li.unread.comment.group ul.actions label:hover {
+  background: var(--gb-bg-hover) !important;
+  border-color: var(--gb-border) !important;
+  color: var(--gb-hover) !important;
+  -webkit-text-fill-color: var(--gb-hover) !important;
+}
+
+/* FAQ 语言切换器美化 */
+
+html body #main form[action*="/faq"],
+html body #main form[action*="/faqs"],
+html body.faq #main form {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin: 0 0 14px 0 !important;
+  padding: 0 !important;
+}
+
+/* “语言：” 这块 */
+html body #main form[action*="/faq"] label,
+html body #main form[action*="/faqs"] label,
+html body.faq #main form label {
+  display: inline-block !important;
+  padding: 6px 12px !important;
+  margin: 0 8px 0 0 !important;
+  background: var(--gb-bg-soft-2) !important;
+  border: 1px solid var(--gb-border-soft) !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  color: var(--gb-text) !important;
+  -webkit-text-fill-color: var(--gb-text) !important;
+  line-height: 1.2 !important;
+  vertical-align: middle !important;
+}
+
+/* 下拉框 */
+html body #main form[action*="/faq"] select,
+html body #main form[action*="/faqs"] select,
+html body.faq #main form select {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  min-width: 140px !important;
+  padding: 6px 10px !important;
+  background: var(--gb-bg) !important;
+  border: 1px solid var(--gb-border) !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  color: var(--gb-text) !important;
+  -webkit-text-fill-color: var(--gb-text) !important;
+}
+
+/* 确定按钮 */
+html body #main form[action*="/faq"] input[type="submit"],
+html body #main form[action*="/faq"] button,
+html body #main form[action*="/faqs"] input[type="submit"],
+html body #main form[action*="/faqs"] button,
+html body.faq #main form input[type="submit"],
+html body.faq #main form button {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin-left: 8px !important;
+  padding: 6px 12px !important;
+  background: var(--gb-bg-soft-2) !important;
+  border: 1px solid var(--gb-border-soft) !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  color: var(--gb-text) !important;
+  -webkit-text-fill-color: var(--gb-text) !important;
+  text-decoration: none !important;
+}
+
+/* hover */
+html body #main form[action*="/faq"] input[type="submit"]:hover,
+html body #main form[action*="/faq"] button:hover,
+html body #main form[action*="/faqs"] input[type="submit"]:hover,
+html body #main form[action*="/faqs"] button:hover,
+html body.faq #main form input[type="submit"]:hover,
+html body.faq #main form button:hover {
+  background: var(--gb-bg-hover) !important;
+  border-color: var(--gb-border) !important;
+  color: var(--gb-hover) !important;
+  -webkit-text-fill-color: var(--gb-hover) !important;
+}
+
+/* ==== 系列特定列表页：终极排序与间距微调 ==== */
+
+/* 1. 确保头部依然是弹性盒子 */
+#main li.series.blurb .header.module,
+#dashboard li.series.blurb .header.module {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    position: relative !important;
+    padding-top: 15px !important;
+}
+
+/* --- 下面开始重新发牌排序，并缩紧间距 --- */
+
+/* 2. 标题和作者（第 1 位） */
+#main li.series.blurb .header.module h4.heading,
+#dashboard li.series.blurb .header.module h4.heading {
+    font-size: 0 !important; 
+    width: 100% !important;
+    margin: 0 !important;
+    order: 1 !important;
+}
+
+#main li.series.blurb .header.module h4.heading a:first-of-type,
+#dashboard li.series.blurb .header.module h4.heading a:first-of-type {
+    display: block !important;
+    font-size: 1.2rem !important; 
+    font-weight: bold !important;
+    margin-bottom: 2px !important;
+}
+
+#main li.series.blurb .header.module h4.heading a[rel="author"] {
+    display: block !important;
+    font-size: 1rem !important; 
+    margin-bottom: 0 !important;
+}
+
+/* 3. 日期（第 2 位，紧贴作者下方） */
+#main li.series.blurb .header.module .datetime,
+#dashboard li.series.blurb .header.module .datetime {
+    position: relative !important; 
+    top: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin: 4px 0 !important;
+    float: none !important;
+    order: 2 !important;
+    color: var(--gb-text) !important;
+}
+
+/* 4. 分级图标带小花（第 3 位） */
+#main li.series.blurb .header.module ul.required-tags,
+#dashboard li.series.blurb .header.module ul.required-tags {
+    position: relative !important; 
+    top: auto !important;
+    right: auto !important;
+    left: auto !important;
+    display: flex !important; 
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 4px 0 !important;
+    padding: 0 !important;
+    order: 3 !important;
+}
+
+#main li.series.blurb .header.module ul.required-tags li,
+#dashboard li.series.blurb .header.module ul.required-tags li {
+    display: inline-block !important;
+    float: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#main li.series.blurb ul.required-tags li + li::before {
+    vertical-align: middle !important;
+    margin: 0 4px !important; 
+    color: var(--gb-border) !important;
+}
+
+/* 5. 原著圈子标签（第 4 位，垫底） */
+#main li.series.blurb .header.module h5.fandoms.heading,
+#dashboard li.series.blurb .header.module h5.fandoms.heading {
+    width: 100% !important;
+    text-align: center !important;
+    margin: 4px 0 0 0 !important;
+    order: 4 !important;
+    color: var(--gb-text) !important;
+}
+
+#main li.user.short.blurb.group p.status,
+#dashboard li.user.short.blurb.group p.status {
+  display: none !important;
+}
+
+/* ==== 终极精准打击：仅针对紧凑型用户列表进行完美玻璃化处理 ==== */
+html body #main li.user.short.blurb.group {
+  background-color: var(--gb-bg-soft) !important;
+  border: none !important; 
+  border-bottom: none !important; 
+  border-radius: 12px !important; 
+  margin-bottom: 10px !important;
+  padding: 12px 16px !important;
+  box-shadow: 0px 8px 24px var(--gb-shadow) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.92) !important; 
+  border-left: 1px solid var(--gb-border-softer) !important; 
+  color: var(--gb-text) !important;
+  -webkit-text-fill-color: var(--gb-text) !important;
+}
+
+html body #main li.user.short.blurb.group a {
+  color: var(--gb-text) !important;
+  -webkit-text-fill-color: var(--gb-text) !important;
+}
+
+html body #main li.user.short.blurb.group a:hover {
+  color: var(--gb-hover) !important;
+  -webkit-text-fill-color: var(--gb-hover) !important;
 }
