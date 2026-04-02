@@ -3817,9 +3817,8 @@ html body #footer * {
 #chapters .userstuff li,
 #chapters .userstuff blockquote {
   color: var(--ac-color-deep) !important;
-  font-family: -apple-system, BlinkMacSystemFont,
-                   "PingFang SC", "Microsoft YaHei",
-                   "Helvetica Neue", Arial, sans-serif !important;
+  font-family: "Helvetica Neue", Arial, sans-serif,
+               "PingFang SC", "Microsoft YaHei" !important;
   line-height: 1.5 !important;
   font-size: 0.9rem !important;
 }
