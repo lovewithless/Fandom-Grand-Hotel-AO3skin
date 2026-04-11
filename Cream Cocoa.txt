@@ -890,23 +890,6 @@ html body #dashboard:not(.own) ul.actions li a:hover {
   border-bottom: none !important;
 }
 
-html body #header ul.primary li a,
-html body #main ul.navigation.actions li a,
-html body #main .actions a,
-html body #main .action,
-html body li.chapter-index a,
-html body li.download a,
-html body div.download a,
-html body button,
-html body input[type="submit"] {
-  color: #4E342E !important;
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  text-decoration: none !important;
-  border-bottom: none !important;
-}
-
 html body #header ul.primary li a:hover,
 html body #main ul.navigation.actions li a:hover,
 html body #main .actions a:hover,
@@ -3661,22 +3644,6 @@ html body #dashboard li.external_work.blurb {
   box-sizing: border-box !important;
 }
 
-html body #main .actions a,
-html body #workskin .actions a,
-html body #dashboard .actions a,
-html body #main .actions input[type="submit"],
-html body #main .actions button,
-html body #workskin .actions input[type="submit"],
-html body #dashboard .actions input[type="submit"] {
-  color: #4E342E !important;
-  -webkit-text-fill-color: #4E342E !important;
-  background: transparent !important;
-  border: none !important;
-  border-bottom: 1px solid transparent !important;
-  box-shadow: none !important;
-  text-decoration: none !important;
-}
-
 html body #main .actions a:hover,
 html body #main .actions a:focus,
 html body #workskin .actions a:hover,
@@ -4218,24 +4185,50 @@ html body #main li.user.short.blurb.group {
   background-image: url("https://64.media.tumblr.com/692601cd5ed1c3fb7972b0d4c8c8455f/f13229866d1445cc-dc/s2048x3072/5533942c553adc7b83b8a06a6d39817dbc47da0d.png") !important;
 }
 
-#main ul.navigation.actions li form,
-#main ul.navigation.actions li form p {
-  display: inline !important;
-  margin: 0 !important;
-  padding: 0 !important;
+html body #header ul.primary li a,
+html body #header ul.primary li a:visited,
+html body #main ul.navigation.actions li a,
+html body #main ul.navigation.actions li a:visited,
+html body #main .actions a,
+html body #main .actions a:visited,
+html body #main .action,
+html body #main .action:visited,
+html body li.chapter-index a,
+html body li.chapter-index a:visited,
+html body li.download a,
+html body li.download a:visited,
+html body div.download a,
+html body div.download a:visited,
+html body #main ul.navigation.actions li input[type="submit"],
+html body #main ul.navigation.actions li button {
+  color: #4E342E !important;
+  -webkit-text-fill-color: #4E342E !important;
+  text-decoration: none !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
-#main ul.navigation.actions li input[type="submit"],
-#main ul.navigation.actions li button {
-  -webkit-appearance: none !important;
-  appearance: none !important;
-  display: inline !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: none !important;
+html body #header ul.primary li a:hover,
+html body #header ul.primary li a:focus,
+html body #main ul.navigation.actions li a:hover,
+html body #main ul.navigation.actions li a:focus,
+html body #main .actions a:hover,
+html body #main .actions a:focus,
+html body #main .action:hover,
+html body #main .action:focus,
+html body li.chapter-index a:hover,
+html body li.chapter-index a:focus,
+html body li.download a:hover,
+html body li.download a:focus,
+html body div.download a:hover,
+html body div.download a:focus,
+html body #main ul.navigation.actions li input[type="submit"]:hover,
+html body #main ul.navigation.actions li input[type="submit"]:focus,
+html body #main ul.navigation.actions li button:hover,
+html body #main ul.navigation.actions li button:focus {
+  color: #70000E !important;
+  -webkit-text-fill-color: #70000E !important;
+  text-decoration: none !important;
   background: transparent !important;
-  box-shadow: none !important;
-  font: inherit !important;
-  line-height: 1.2 !important;
-  vertical-align: baseline !important;
 }
