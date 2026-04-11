@@ -1670,8 +1670,8 @@ div.download a:focus,
   font-size: var(--ac-navbar-font-size) !important;
 }
 
-#dashboard:not(.own) ul.primary,
-#dashboard:not(.own) ul.secondary {
+#dashboard:not(.own) > ul.primary,
+#dashboard:not(.own) > ul.secondary {
   margin: 0 !important;
   padding: var(--ac-navlist-pad) !important;
   list-style: none !important;
@@ -1680,14 +1680,14 @@ div.download a:focus,
   justify-content: var(--ac-navlist-justify) !important;
 }
 
-#dashboard:not(.own) ul.primary li,
-#dashboard:not(.own) ul.secondary li {
+#dashboard:not(.own) > ul.primary li,
+#dashboard:not(.own) > ul.secondary li {
   margin: var(--ac-navitem-margin) !important;
   padding: 0 !important;
 }
 
-#dashboard:not(.own) ul.primary li a,
-#dashboard:not(.own) ul.secondary li a {
+#dashboard:not(.own) > ul.primary li a,
+#dashboard:not(.own) > ul.secondary li a {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
@@ -4239,18 +4239,6 @@ li.bookmark.blurb .header h4.heading a[href*="/users/"]:visited:hover {
   color: var(--ac-color-5e6f9b) !important;
 }
 
-#dashboard .hidden {
-  display: initial !important;
-}
-
-#dashboard ul.expandable.secondary.hidden {
-  display: none !important;
-}
-
-#dashboard ul.expandable.secondary:not(.hidden) {
-  display: block !important;
-}
-
 dl.work.meta dd.relationship ul.tags li,
 dl.work.meta dd.relationship ul.commas li a.tag,
 dl.work.meta dd.relationship ul.commas li a.tag,
@@ -4667,7 +4655,7 @@ li.chapter .secondary input[type="submit"] {
   border-radius: 999px !important;
   box-shadow: 0 2px 8px var(--ac-rgba-accent-15) !important;
   padding: var(--sp-2) var(--sp-6) !important;
-  margin: 0 0 var(--sp-4) 10pxexplains !important;
+  margin: 0 0 var(--sp-4) 10px !important;
   color: var(--ac-color-text) !important;
   font-family: inherit !important;
   font-weight: bold !important;
@@ -5130,4 +5118,56 @@ ul.tags li a.tag:active {
   box-shadow: var(--ac-subpanel-shadow-x) var(--ac-subpanel-shadow-y) var(--ac-subpanel-shadow-blur) var(--ac-subpanel-shadow-spread) var(--ac-subpanel-shadow-color) !important;
   border-radius: var(--ac-subpanel-radius) !important;
   padding: var(--ac-subpanel-pad-y) var(--ac-subpanel-pad-x) !important;
+}
+
+#dashboard .hidden,
+#dashboard ul.secondary.hidden,
+#dashboard ul.expandable.secondary.hidden,
+#dashboard ul.navigation .expandable.secondary.hidden {
+  display: none !important;
+}
+
+#dashboard ul.expandable.secondary:not(.hidden),
+#dashboard ul.navigation .expandable.secondary:not(.hidden) {
+  display: block !important;
+}
+
+#dashboard:not(.own) > ul.primary,
+#dashboard:not(.own) > ul.secondary {
+  margin: 0 !important;
+  padding: 0.15em 0 0.1em 0 !important;
+  list-style: none !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+}
+
+#dashboard:not(.own) > ul.primary li,
+#dashboard:not(.own) > ul.secondary li {
+  margin: 0 0.7em 0.25em 0.7em !important;
+  padding: 0 !important;
+}
+
+#dashboard:not(.own) > ul.primary li a,
+#dashboard:not(.own) > ul.secondary li a {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  display: inline-block !important;
+  padding: 0 0.25em 2px 0.25em !important;
+  margin: 0 !important;
+  font-family: "Garamond", "Baskerville", "Georgia", "Times New Roman", serif !important;
+  font-size: 1em !important;
+  font-variant: small-caps;
+  letter-spacing: 0.08em !important;
+  text-transform: none !important;
+  color: #2C3E50 !important;
+  text-decoration: none !important;
+}
+
+#dashboard:not(.own) ul.expandable.secondary,
+#dashboard:not(.own) ul.navigation .expandable.secondary {
+  display: block !important;
+  flex-wrap: nowrap !important;
 }
