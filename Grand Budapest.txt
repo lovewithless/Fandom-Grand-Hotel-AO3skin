@@ -4321,3 +4321,25 @@ html body #main li.user.short.blurb.group a:hover {
   right: -6px !important;
   background-image: url("https://64.media.tumblr.com/692601cd5ed1c3fb7972b0d4c8c8455f/f13229866d1445cc-dc/s2048x3072/5533942c553adc7b83b8a06a6d39817dbc47da0d.png") !important;
 }
+
+#main ul.navigation.actions li form,
+#main ul.navigation.actions li form p {
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#main ul.navigation.actions li input[type="submit"],
+#main ul.navigation.actions li button {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  font: inherit !important;
+  line-height: 1.2 !important;
+  vertical-align: baseline !important;
+}
