@@ -312,8 +312,8 @@ li.bookmark.blurb > .header::after {
 #dashboard .listbox,
 #main fieldset.listbox,
 #dashboard fieldset.listbox {
-  background-color: #FFE4E1 !important;
-  border-color: #E2BFC6 !important;
+  background-color: #FCEFEF !important;
+  border-color: #6FA3D8 !important;
 }
 
 #main li.blurb ul.tags li.warning::before,
@@ -1718,7 +1718,7 @@ html body #main form.verbose input[type="file"]::file-selector-button {
 
 html body #main form.verbose input[type="file"]::file-selector-button:hover,
 html body #main form.verbose input[type="file"]::-webkit-file-upload-button:hover {
-  background: #FFE4E1 !important;
+  background: #FCEFEF !important;
 }
 
 html body #main form.verbose input[type="file"]::file-selector-button:active,
@@ -1760,7 +1760,7 @@ html body #main form.verbose button:hover,
 html body #main form#new_skin input[type="submit"]:hover,
 html body #main form#edit_skin input[type="submit"]:hover,
 html body #main form[action*="/skins"] input[type="submit"]:hover {
-  background: #FFE4E1 !important;
+  background: #FCEFEF !important;
 }
 
 html body #main form.verbose input[type="submit"]:active,
@@ -2226,7 +2226,7 @@ html body #dashboard p[title="Choose media type"] input[type="submit"] {
 
 html body #main p[title="Choose media type"] input[type="submit"]:hover,
 html body #dashboard p[title="Choose media type"] input[type="submit"]:hover {
-  background: #FFE4E1 !important;
+  background: #FCEFEF !important;
 }
 
 html body #main p[title="Choose media type"] input[type="submit"]:active,
@@ -3894,7 +3894,7 @@ html body #footer * {
 #main form fieldset,
 #main fieldset,
 #main fieldset fieldset {
-  background: #FFE4E1 !important;
+  background: #FCEFEF !important;
   color: #2A2423 !important;
   border: 1px solid #E2BFC6 !important;
   border-radius: 16px !important;
@@ -3962,7 +3962,7 @@ html body {
   --gb-bg: #FCEFEF;
   --gb-bg-soft: rgba(252, 239, 239, 0.58);
   --gb-bg-soft-2: rgba(252, 239, 239, 0.72);
-  --gb-bg-hover: #FFE4E1;
+  --gb-bg-hover: #FCEFEF;
   --gb-text: #5A2A7A;
   --gb-text-deep: #2A2423;
   --gb-hover: #8A1F54;
@@ -4258,4 +4258,66 @@ html body #main li.user.short.blurb.group a {
 html body #main li.user.short.blurb.group a:hover {
   color: var(--gb-hover) !important;
   -webkit-text-fill-color: var(--gb-hover) !important;
+}
+
+#main ol.bookmark.index.group li.series.blurb > .header,
+#dashboard ol.bookmark.index.group li.series.blurb > .header {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+
+#main ol.bookmark.index.group li.series.blurb > .header::before,
+#main ol.bookmark.index.group li.series.blurb > .header::after,
+#dashboard ol.bookmark.index.group li.series.blurb > .header::before,
+#dashboard ol.bookmark.index.group li.series.blurb > .header::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  background-image: none !important;
+}
+
+#main ol.bookmark.index.group li.series.blurb > .header.module,
+#dashboard ol.bookmark.index.group li.series.blurb > .header.module {
+  position: relative !important;
+  overflow: visible !important;
+}
+
+#main ol.bookmark.index.group li.series.blurb > .header.module > *,
+#dashboard ol.bookmark.index.group li.series.blurb > .header.module > * {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+#main ol.bookmark.index.group li.series.blurb > .header.module::before,
+#main ol.bookmark.index.group li.series.blurb > .header.module::after,
+#dashboard ol.bookmark.index.group li.series.blurb > .header.module::before,
+#dashboard ol.bookmark.index.group li.series.blurb > .header.module::after {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  top: 58% !important;
+  width: 68px !important;
+  height: 96px !important;
+  transform: translateY(-50%) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: contain !important;
+  opacity: 1 !important;
+  z-index: 1 !important;
+  -webkit-filter: invert(20%) sepia(95%) saturate(4200%) hue-rotate(205deg) brightness(92%) contrast(105%) !important;
+  filter: invert(20%) sepia(95%) saturate(4200%) hue-rotate(205deg) brightness(92%) contrast(105%) !important;
+}
+
+#main ol.bookmark.index.group li.series.blurb > .header.module::before,
+#dashboard ol.bookmark.index.group li.series.blurb > .header.module::before {
+  left: -6px !important;
+  background-image: url("https://64.media.tumblr.com/ac88605c29de1ee39b5c8c508c6bfd58/f13229866d1445cc-42/s2048x3072/d00c7a4fd733e74a3d08d2afc24395fc85bf76d4.png") !important;
+}
+
+#main ol.bookmark.index.group li.series.blurb > .header.module::after,
+#dashboard ol.bookmark.index.group li.series.blurb > .header.module::after {
+  right: -6px !important;
+  background-image: url("https://64.media.tumblr.com/692601cd5ed1c3fb7972b0d4c8c8455f/f13229866d1445cc-dc/s2048x3072/5533942c553adc7b83b8a06a6d39817dbc47da0d.png") !important;
 }
