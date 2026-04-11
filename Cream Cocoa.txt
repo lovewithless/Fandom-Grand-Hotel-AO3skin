@@ -4140,3 +4140,80 @@ html body #main li.user.short.blurb.group {
   border-top: 1px solid rgba(255, 252, 245, 0.92) !important;
   border-left: 1px solid rgba(255, 248, 231, 0.72) !important;
 }
+
+#main ol.bookmark.index.group li.series.blurb > .header,
+#dashboard ol.bookmark.index.group li.series.blurb > .header {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#main ol.bookmark.index.group li.series.blurb > .header::before,
+#main ol.bookmark.index.group li.series.blurb > .header::after,
+#dashboard ol.bookmark.index.group li.series.blurb > .header::before,
+#dashboard ol.bookmark.index.group li.series.blurb > .header::after {
+  content: none !important;
+  display: none !important;
+  background-image: none !important;
+}
+
+#main ol.bookmark.index.group li.series.blurb > .header,
+#dashboard ol.bookmark.index.group li.series.blurb > .header {
+  position: relative !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  overflow: visible !important;
+}
+
+#main ol.bookmark.index.group li.series.blurb > .header::before,
+#main ol.bookmark.index.group li.series.blurb > .header::after,
+#dashboard ol.bookmark.index.group li.series.blurb > .header::before,
+#dashboard ol.bookmark.index.group li.series.blurb > .header::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  background-image: none !important;
+}
+
+#main ol.bookmark.index.group li.series.blurb > .header.module,
+#dashboard ol.bookmark.index.group li.series.blurb > .header.module {
+  position: relative !important;
+  overflow: visible !important;
+}
+
+#main ol.bookmark.index.group li.series.blurb > .header.module > *,
+#dashboard ol.bookmark.index.group li.series.blurb > .header.module > * {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+#main ol.bookmark.index.group li.series.blurb > .header.module::before,
+#main ol.bookmark.index.group li.series.blurb > .header.module::after,
+#dashboard ol.bookmark.index.group li.series.blurb > .header.module::before,
+#dashboard ol.bookmark.index.group li.series.blurb > .header.module::after {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  top: 58% !important;
+  width: 68px !important;
+  height: 96px !important;
+  transform: translateY(-50%) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: contain !important;
+  opacity: 1 !important;
+  z-index: 1 !important;
+  filter: sepia(1) saturate(2.4) hue-rotate(-20deg) brightness(0.65) contrast(1.2) !important;
+  -webkit-filter: sepia(1) saturate(2.4) hue-rotate(-20deg) brightness(0.65) contrast(1.2) !important;
+}
+
+#main ol.bookmark.index.group li.series.blurb > .header.module::before,
+#dashboard ol.bookmark.index.group li.series.blurb > .header.module::before {
+  left: -6px !important;
+  background-image: url("https://64.media.tumblr.com/ac88605c29de1ee39b5c8c508c6bfd58/f13229866d1445cc-42/s2048x3072/d00c7a4fd733e74a3d08d2afc24395fc85bf76d4.png") !important;
+}
+
+#main ol.bookmark.index.group li.series.blurb > .header.module::after,
+#dashboard ol.bookmark.index.group li.series.blurb > .header.module::after {
+  right: -6px !important;
+  background-image: url("https://64.media.tumblr.com/692601cd5ed1c3fb7972b0d4c8c8455f/f13229866d1445cc-dc/s2048x3072/5533942c553adc7b83b8a06a6d39817dbc47da0d.png") !important;
+}
